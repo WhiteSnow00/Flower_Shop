@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -8,7 +7,6 @@ echo "<script>window.open('login.php','_self')</script>";
 }
 
 else {
-
 
 ?>
 
@@ -48,9 +46,7 @@ $product_id = $row_products['product_id'];
 
 $product_title = $row_products['product_title'];
 
-
 }
-
 
 ?>
 
@@ -150,7 +146,6 @@ $product_title = $row_products['product_title'];
 
 <option value="<?php echo $product_id; ?>"> <?php echo $product_title; ?> </option>
 
-
 <?php
 
 $get_p = "select * from products where status='product'";
@@ -239,7 +234,6 @@ $update_coupon = "update coupons set product_id='$product_id',coupon_title='$cou
 
 $run_coupon = mysqli_query($con,$update_coupon);
 
-
 if($run_coupon){
 
 echo "<script>alert('One Coupon Has Been Updated')</script>";
@@ -247,7 +241,6 @@ echo "<script>alert('One Coupon Has Been Updated')</script>";
 echo "<script>window.open('index.php?view_coupons','_self')</script>";
 
 }
-
 
 }
 

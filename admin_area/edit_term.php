@@ -8,11 +8,9 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <?php
-
 
 if(isset($_GET['edit_term'])){
 
@@ -57,13 +55,9 @@ $term_desc = $row_term['term_desc'];
 
 </div><!-- 1 row Ends -->
 
-
-
 <div class="row"><!-- 2 row Starts -->
 
-
 <div class="col-lg-12"><!-- col-lg-12 Starts -->
-
 
 <div class="panel panel-default"><!-- panel panel-default Starts -->
 
@@ -137,11 +131,9 @@ $term_desc = $row_term['term_desc'];
 
 </div><!-- panel panel-default Ends -->
 
-
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php
 
@@ -167,8 +159,6 @@ echo "<script>window.open('index.php?view_terms','_self')</script>";
 
 }
 
-
 ?>
-
 
 <?php } ?>

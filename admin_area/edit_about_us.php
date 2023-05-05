@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,14 +8,12 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
-
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
   <script>tinymce.init({ selector:'#about_desc' });</script>
-  
+
 <?php
 
 $get_about_us = "select * from about_us";
@@ -83,7 +80,6 @@ $about_desc = $row_about_us['about_desc'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> About Us Short Description : </label>
@@ -128,7 +124,6 @@ $about_desc = $row_about_us['about_desc'];
 
 </div><!-- form-group Ends -->
 
-
 </form><!-- form-horizontal Ends -->
 
 </div><!-- panel-body Ends -->
@@ -164,6 +159,5 @@ echo "<script>window.open('index.php?dashboard','_self')</script>";
 }
 
 ?>
-
 
 <?php } ?>

@@ -72,7 +72,6 @@ $manufacturer_id = $row_manfacturer['manufacturer_id'];
 
 $manufacturer_title = $row_manfacturer['manufacturer_title'];
 
-
 $get_p_cat = "select * from product_categories where p_cat_id='$p_cat'";
 
 $run_p_cat = mysqli_query($con,$get_p_cat);
@@ -91,7 +90,6 @@ $cat_title = $row_cat['cat_title'];
 
 ?>
 
-
 <!DOCTYPE html>
 
 <html>
@@ -99,7 +97,6 @@ $cat_title = $row_cat['cat_title'];
 <head>
 
 <title> Edit Products </title>
-
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'#product_desc,#product_features' });</script>
@@ -125,7 +122,6 @@ $cat_title = $row_cat['cat_title'];
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- row Ends -->
-
 
 <div class="row"><!-- 2 row Starts --> 
 
@@ -158,7 +154,6 @@ $cat_title = $row_cat['cat_title'];
 </div>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -230,7 +225,6 @@ $manufacturer_title
 
 <option value="<?php echo $p_cat; ?>" > <?php echo $p_cat_title; ?> </option>
 
-
 <?php
 
 $get_p_cats = "select * from product_categories";
@@ -247,9 +241,7 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 }
 
-
 ?>
-
 
 </select>
 
@@ -262,7 +254,6 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 <label class="col-md-3 control-label" > Category </label>
 
 <div class="col-md-6" >
-
 
 <select name="cat" class="form-control" >
 
@@ -285,7 +276,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 }
 
 ?>
-
 
 </select>
 
@@ -410,7 +400,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- description tab-pane fade in active Ends -->
 
-
 <div id="features" class="tab-pane fade in"><!-- features tab-pane fade in Starts -->
 
 <br>
@@ -423,7 +412,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- features tab-pane fade in Ends -->
 
-
 <div id="video" class="tab-pane fade in"><!-- video tab-pane fade in Starts -->
 
 <br>
@@ -435,7 +423,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 </textarea>
 
 </div><!-- video tab-pane fade in Ends -->
-
 
 </div><!-- tab-content Ends -->
 
@@ -476,9 +463,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends --> 
-
-
-
 
 </body>
 
@@ -522,7 +506,6 @@ $product_img1 = $new_p_image1;
 
 }
 
-
 if(empty($product_img2)){
 
 $product_img2 = $new_p_image2;
@@ -534,7 +517,6 @@ if(empty($product_img3)){
 $product_img3 = $new_p_image3;
 
 }
-
 
 move_uploaded_file($temp_name1,"product_images/$product_img1");
 move_uploaded_file($temp_name2,"product_images/$product_img2");

@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -11,7 +9,6 @@ echo "<script>window.open('login.php','_self')</script>";
 else {
 
 ?>
-
 
 <div class="row" ><!-- 1  row Starts -->
 
@@ -24,8 +21,6 @@ else {
 <i class="fa fa-dashboard" ></i> Dashboard / Insert User
 
 </li>
-
-
 
 </ol><!-- breadcrumb Ends -->
 
@@ -47,9 +42,7 @@ else {
 
 </h3>
 
-
 </div><!-- panel-heading Ends -->
-
 
 <div class="panel-body"><!-- panel-body Starts -->
 
@@ -67,7 +60,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Email: </label>
@@ -79,7 +71,6 @@ else {
 </div><!-- col-md-6 Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -105,7 +96,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Job: </label>
@@ -118,7 +108,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Contact: </label>
@@ -130,7 +119,6 @@ else {
 </div><!-- col-md-6 Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -156,7 +144,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"></label>
@@ -169,7 +156,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 </form><!-- form-horizontal Ends -->
 
 </div><!-- panel-body Ends -->
@@ -177,7 +163,6 @@ else {
 </div><!-- panel panel-default Ends -->
 
 </div><!-- col-lg-12 Ends -->
-
 
 </div><!-- 2 row Ends -->
 
@@ -199,7 +184,6 @@ $admin_contact = $_POST['admin_contact'];
 
 $admin_about = $_POST['admin_about'];
 
-
 $admin_image = $_FILES['admin_image']['name'];
 
 $temp_admin_image = $_FILES['admin_image']['tmp_name'];
@@ -210,7 +194,6 @@ $insert_admin = "insert into admins (admin_name,admin_email,admin_pass,admin_ima
 
 $run_admin = mysqli_query($con,$insert_admin);
 
-
 if($run_admin){
 
 echo "<script>alert('One User Has Been Inserted successfully')</script>";
@@ -219,12 +202,8 @@ echo "<script>window.open('index.php?view_users','_self')</script>";
 
 }
 
-
 }
 
-
 ?>
-
-
 
 <?php }  ?>

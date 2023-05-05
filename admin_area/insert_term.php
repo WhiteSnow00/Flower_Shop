@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -32,13 +31,9 @@ else {
 
 </div><!-- 1 row Ends -->
 
-
-
 <div class="row"><!-- 2 row Starts -->
 
-
 <div class="col-lg-12"><!-- col-lg-12 Starts -->
-
 
 <div class="panel panel-default"><!-- panel panel-default Starts -->
 
@@ -110,11 +105,9 @@ else {
 
 </div><!-- panel panel-default Ends -->
 
-
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php
 
@@ -140,8 +133,6 @@ echo "<script>window.open('index.php?view_terms','_self')</script>";
 
 }
 
-
 ?>
-
 
 <?php } ?>

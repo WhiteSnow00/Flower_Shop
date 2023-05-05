@@ -12,9 +12,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
-
-
 ?>
 
 <?php
@@ -43,7 +40,6 @@ $admin_contact = $row_admin['admin_contact'];
 
 $admin_about = $row_admin['admin_about'];
 
-
 $get_products = "select * from products";
 $run_products = mysqli_query($con,$get_products);
 $count_products = mysqli_num_rows($run_products);
@@ -56,14 +52,11 @@ $get_p_categories = "select * from product_categories";
 $run_p_categories = mysqli_query($con,$get_p_categories);
 $count_p_categories = mysqli_num_rows($run_p_categories);
 
-
 $get_pending_orders = "select * from pending_orders";
 $run_pending_orders = mysqli_query($con,$get_pending_orders);
 $count_pending_orders = mysqli_num_rows($run_pending_orders);
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -177,7 +170,6 @@ include("insert_slide.php");
 
 }
 
-
 if(isset($_GET['view_slides'])){
 
 include("view_slides.php");
@@ -190,13 +182,11 @@ include("delete_slide.php");
 
 }
 
-
 if(isset($_GET['edit_slide'])){
 
 include("edit_slide.php");
 
 }
-
 
 if(isset($_GET['view_customers'])){
 
@@ -210,7 +200,6 @@ include("customer_delete.php");
 
 }
 
-
 if(isset($_GET['view_orders'])){
 
 include("view_orders.php");
@@ -222,7 +211,6 @@ if(isset($_GET['order_delete'])){
 include("order_delete.php");
 
 }
-
 
 if(isset($_GET['view_payments'])){
 
@@ -248,14 +236,11 @@ include("view_users.php");
 
 }
 
-
 if(isset($_GET['user_delete'])){
 
 include("user_delete.php");
 
 }
-
-
 
 if(isset($_GET['user_profile'])){
 
@@ -341,11 +326,9 @@ include("edit_manufacturer.php");
 
 }
 
-
 if(isset($_GET['insert_coupon'])){
 
 include("insert_coupon.php");
-
 }
 
 if(isset($_GET['view_coupons'])){
@@ -360,20 +343,17 @@ include("delete_coupon.php");
 
 }
 
-
 if(isset($_GET['edit_coupon'])){
 
 include("edit_coupon.php");
 
 }
 
-
 if(isset($_GET['insert_icon'])){
 
 include("insert_icon.php");
 
 }
-
 
 if(isset($_GET['view_icons'])){
 
@@ -411,13 +391,11 @@ include("delete_bundle.php");
 
 }
 
-
 if(isset($_GET['edit_bundle'])){
 
 include("edit_bundle.php");
 
 }
-
 
 if(isset($_GET['insert_rel'])){
 
@@ -437,13 +415,11 @@ include("delete_rel.php");
 
 }
 
-
 if(isset($_GET['edit_rel'])){
 
 include("edit_rel.php");
 
 }
-
 
 if(isset($_GET['edit_contact_us'])){
 
@@ -456,7 +432,6 @@ if(isset($_GET['insert_enquiry'])){
 include("insert_enquiry.php");
 
 }
-
 
 if(isset($_GET['view_enquiry'])){
 
@@ -476,13 +451,11 @@ include("edit_enquiry.php");
 
 }
 
-
 if(isset($_GET['edit_about_us'])){
 
 include("edit_about_us.php");
 
 }
-
 
 if(isset($_GET['insert_store'])){
 
@@ -520,9 +493,7 @@ include("edit_store.php");
 
 <script src="js/bootstrap.min.js"></script>
 
-
 </body>
-
 
 </html>
 

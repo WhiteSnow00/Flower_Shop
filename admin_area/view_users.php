@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -26,11 +24,9 @@ else {
 
 </ol><!-- breadcrumb Ends -->
 
-
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row" ><!-- 2 row Starts -->
 
@@ -45,7 +41,6 @@ else {
 <i class="fa fa-money fa-fw" ></i> View Users
 
 </h3><!-- panel-title Ends -->
-
 
 </div><!-- panel-heading Ends -->
 
@@ -70,7 +65,6 @@ else {
 <th>User Job:</th>
 
 <th>Delete User:</th>
-
 
 </tr>
 
@@ -98,10 +92,6 @@ $admin_country = $row_admin['admin_country'];
 
 $admin_job = $row_admin['admin_job'];
 
-
-
-
-
 ?>
 
 <tr>
@@ -126,35 +116,22 @@ $admin_job = $row_admin['admin_job'];
 
 </td>
 
-
 </tr>
-
 
 <?php } ?>
 
 </tbody><!-- tbody Ends -->
 
-
-
 </table><!-- table table-bordered table-hover table-striped Ends -->
 
 </div><!-- table-responsive Ends -->
 
-
 </div><!-- panel-body Ends -->
-
 
 </div><!-- panel panel-default Ends -->
 
-
 </div><!-- col-lg-12 Ends -->
 
-
-
 </div><!-- 2 row Ends -->
-
-
-
-
 
 <?php }  ?>

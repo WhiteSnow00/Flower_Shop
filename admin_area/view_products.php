@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -11,7 +9,6 @@ echo "<script>window.open('login.php','_self')</script>";
 else {
 
 ?>
-
 
 <div class="row"><!--  1 row Starts -->
 
@@ -45,7 +42,6 @@ else {
 
 </h3><!-- panel-title Ends -->
 
-
 </div><!-- panel-heading Ends -->
 
 <div class="panel-body" ><!-- panel-body Starts -->
@@ -66,8 +62,6 @@ else {
 <th>Product Date</th>
 <th>Product Delete</th>
 <th>Product Edit</th>
-
-
 
 </tr>
 
@@ -149,9 +143,7 @@ echo $count;
 
 <?php } ?>
 
-
 </tbody>
-
 
 </table><!-- table table-bordered table-hover table-striped Ends -->
 
@@ -164,8 +156,5 @@ echo $count;
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
-
-
 
 <?php } ?>

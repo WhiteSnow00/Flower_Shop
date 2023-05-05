@@ -17,10 +17,6 @@ echo "<script>window.open('my_account.php?my_wishlist','_self')</script>";
 
 }
 
-
 }
-
-
-
 
 ?>

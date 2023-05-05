@@ -9,7 +9,6 @@ include("includes/main.php");
 
 ?>
 
-
   <!-- MAIN -->
   <main>
     <!-- Contact Page -->
@@ -86,11 +85,9 @@ $contact_email = $row_conatct_us['contact_email'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label> Select Enquiry Type </label>
-
 
 <select name="enquiry_type" class="form-control"><!-- select Starts -->
 
@@ -115,7 +112,6 @@ echo "<option> $enquiry_title </option>";
 </select><!-- select Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="text-center"><!-- text-center Starts -->
 
@@ -181,19 +177,14 @@ echo "<h2 align='center'>Your message has been sent successfully!</h2>";
 
 }
 
-
 ?>
 
 </div><!-- box Ends -->
 
 </div><!-- col-md-12 Ends -->
 
-
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

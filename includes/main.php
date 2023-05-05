@@ -28,7 +28,6 @@
           </a>
         </div>
 
-
         <ul class="login">
 
 <li class="login__item">
@@ -38,7 +37,6 @@ if(!isset($_SESSION['customer_email'])){
 }
 ?>
 </li>
-
 
 <li class="login__item">
 <?php
@@ -110,7 +108,6 @@ if(!isset($_SESSION['customer_email'])){
                     </ul>
                   </div>
                 </div>
-
 
               </div>
 

@@ -9,7 +9,6 @@ include("includes/main.php");
 
 ?>
 
-
   <!-- Cover -->
   <main>
     <div class="hero">
@@ -21,8 +20,6 @@ include("includes/main.php");
             <h1>Featured Collection<h1>
 
       </div>
-
-
 
     <div id="content" class="container"><!-- container Starts -->
 
@@ -106,7 +103,6 @@ include("includes/main.php");
             </ul>
           </div>
 
-
           <div class="footer-nav__col footer-nav__col--contacts">
             <div class="footer-nav__heading">Thông tin liên lạc</div>
             <address class="address">
@@ -126,15 +122,12 @@ include("includes/main.php");
         </div>
       </div>
 
-
-
       <div class="page-footer__subline">
         <div class="container clearfix">
 
           <div class="copyright">
             &copy; 2023 FlowerShop
           </div>
-
 
           <div class="designby">
             Design by Waddah, Tayma, Abdallah

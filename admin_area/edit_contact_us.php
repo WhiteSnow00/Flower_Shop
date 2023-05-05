@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,9 +8,7 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
-
 
 <?php
 
@@ -27,11 +24,7 @@ $contact_heading = $row_contact_us['contact_heading'];
 
 $contact_desc = $row_contact_us['contact_desc'];
 
-
-
 ?>
-
-
 
 <div class="row" ><!-- 1 row Starts -->
 
@@ -131,7 +124,6 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </div><!-- 2 row Ends -->
 
-
 <?php
 
 if(isset($_POST['submit'])){
@@ -141,7 +133,6 @@ $contact_email = $_POST['contact_email'];
 $contact_heading = $_POST['contact_heading'];
 
 $contact_desc = $_POST['contact_desc'];
-
 
 $update_contact_us = "update contact_us set contact_email='$contact_email',contact_heading='$contact_heading',contact_desc='$contact_desc'";
 
@@ -158,6 +149,5 @@ echo "<script>window.open('index.php?dashboard','_self')</script>";
 }
 
 ?>
-
 
 <?php } ?>

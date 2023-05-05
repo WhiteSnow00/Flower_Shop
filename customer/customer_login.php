@@ -8,11 +8,7 @@
 
 <p class="lead" >Login</p>
 
-
 </center>
-
-
-
 
 </div><!-- box-header Ends -->
 
@@ -46,11 +42,9 @@
 
 <i class="fa fa-sign-in" ></i> Log in
 
-
 </button>
 
 </div><!-- text-center Ends -->
-
 
 </form><!--form Ends -->
 
@@ -62,9 +56,7 @@
 
 </a>
 
-
 </center><!-- center Ends -->
-
 
 </div><!-- box Ends -->
 
@@ -118,7 +110,6 @@ echo "<script>alert('You are Logged In')</script>";
 echo "<script>window.open('checkout.php','_self')</script>";
 
 }
-
 
 }
 

@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,9 +8,7 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
-
 
 <?php
 
@@ -43,7 +40,6 @@ $p_id = $row_p['product_id'];
 
 $p_title = $row_p['product_title'];
 
-
 $get_b = "select * from products where product_id='$r_b'";
 
 $run_b = mysqli_query($con,$get_b);
@@ -53,7 +49,6 @@ $row_b = mysqli_fetch_array($run_b);
 $b_id = $row_b['product_id'];
 
 $b_title = $row_b['product_title'];
-
 
 }
 
@@ -76,7 +71,6 @@ $b_title = $row_b['product_title'];
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -178,7 +172,6 @@ echo "<option value='$p_id'> $p_title </option>";
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> </label>
@@ -200,7 +193,6 @@ echo "<option value='$p_id'> $p_title </option>";
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php
 
@@ -224,10 +216,8 @@ echo "<script> window.open('index.php?view_rel','_self') </script>";
 
 }
 
-
 }
 
 ?>
-
 
 <?php } ?>

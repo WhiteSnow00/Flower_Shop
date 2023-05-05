@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -25,7 +23,6 @@ else {
 </li>
 
 </ol><!-- breadcrumb Ends -->
-
 
 </div><!-- col-lg-12 Ends -->
 
@@ -62,8 +59,6 @@ else {
 <th>Delete Category:</th>
 <th>Edit Category:</th>
 
-
-
 </tr>
 
 </thead><!-- thead Ends -->
@@ -84,10 +79,7 @@ $cat_id = $row_cats['cat_id'];
 
 $cat_title = $row_cats['cat_title'];
 
-
 $i++;
-
-
 
 ?>
 
@@ -96,7 +88,6 @@ $i++;
 <td><?php echo $i; ?></td>
 
 <td><?php echo $cat_title; ?></td>
-
 
 <td>
 
@@ -120,13 +111,11 @@ $i++;
 
 </tr>
 
-
 <?php } ?>
 
 </tbody><!-- tbody Ends -->
 
 </table><!-- table-bordered table-hover table-striped Ends -->
-
 
 </div><!-- table-responsive Ends -->
 
@@ -137,6 +126,5 @@ $i++;
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php } ?>

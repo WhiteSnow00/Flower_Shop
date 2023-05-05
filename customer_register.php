@@ -7,9 +7,7 @@ include("includes/header.php");
 include("functions/functions.php");
 include("includes/main.php");
 
-
 ?>
-
 
   <!-- MAIN -->
   <main>
@@ -23,13 +21,8 @@ include("includes/main.php");
     </div>
   </main>
 
-
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
-
-
-
 
 <div class="col-md-12" ><!-- col-md-12 Starts -->
 
@@ -40,8 +33,6 @@ include("includes/main.php");
 <center><!-- center Starts -->
 
 <h2> Register A New Account </h2>
-
-
 
 </center><!-- center Ends -->
 
@@ -97,7 +88,6 @@ include("includes/main.php");
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label> Confirm Password </label>
@@ -117,7 +107,6 @@ include("includes/main.php");
 </div><!-- input-group Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -159,7 +148,6 @@ include("includes/main.php");
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <center>
@@ -167,7 +155,6 @@ include("includes/main.php");
 </center>
 
 </div><!-- form-group Ends -->
-
 
 <div class="text-center"><!-- text-center Starts -->
 
@@ -185,12 +172,8 @@ include("includes/main.php");
 
 </div><!-- col-md-12 Ends -->
 
-
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 
@@ -212,7 +195,6 @@ $('.cross1').hide();
 $('.tick2').hide();
 $('.cross2').hide();
 
-
 $('.confirm').focusout(function(){
 
 var password = $('#pass').val();
@@ -227,8 +209,6 @@ $('.cross1').hide();
 $('.tick2').show();
 $('.cross2').hide();
 
-
-
 }
 else{
 
@@ -238,12 +218,9 @@ $('.cross1').show();
 $('.tick2').hide();
 $('.cross2').show();
 
-
 }
 
-
 });
-
 
 });
 
@@ -401,7 +378,6 @@ mail($c_email,$subject,$message,$headers);
 
 $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip,customer_confirm_code) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip','$customer_confirm_code')";
 
-
 $run_customer = mysqli_query($con,$insert_customer);
 
 $sel_cart = "select * from cart where ip_add='$c_ip'";
@@ -426,9 +402,7 @@ echo "<script>alert('You have been Registered Successfully')</script>";
 
 echo "<script>window.open('index.php','_self')</script>";
 
-
 }
-
 
 }
 

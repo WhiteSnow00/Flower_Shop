@@ -17,7 +17,6 @@ else {
 
 <title> Insert Bundle </title>
 
-
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'#product_desc,#product_features' });</script>
 
@@ -42,7 +41,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- row Ends -->
-
 
 <div class="row"><!-- 2 row Starts --> 
 
@@ -76,7 +74,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group" ><!-- form-group Starts -->
 
 <label class="col-md-3 control-label" > Bundle Url </label>
@@ -96,7 +93,6 @@ Bundle Url Example : navy-blue-t-shirt
 </div>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -130,7 +126,6 @@ $manufacturer_title
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group" ><!-- form-group Starts -->
 
 <label class="col-md-3 control-label" > Product Category </label>
@@ -140,7 +135,6 @@ $manufacturer_title
 <select name="product_cat" class="form-control" >
 
 <option> Select  a Product Category </option>
-
 
 <?php
 
@@ -158,9 +152,7 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 }
 
-
 ?>
-
 
 </select>
 
@@ -173,7 +165,6 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 <label class="col-md-3 control-label" > Category </label>
 
 <div class="col-md-6" >
-
 
 <select name="cat" class="form-control" >
 
@@ -196,7 +187,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 }
 
 ?>
-
 
 </select>
 
@@ -312,11 +302,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_desc" class="form-control" rows="15" id="product_desc">
 
-
 </textarea>
 
 </div><!-- description tab-pane fade in active Ends -->
-
 
 <div id="features" class="tab-pane fade in"><!-- features tab-pane fade in Starts -->
 
@@ -324,11 +312,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_features" class="form-control" rows="15" id="product_features">
 
-
 </textarea>
 
 </div><!-- features tab-pane fade in Ends -->
-
 
 <div id="video" class="tab-pane fade in"><!-- video tab-pane fade in Starts -->
 
@@ -336,11 +322,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <textarea name="product_video" class="form-control" rows="15">
 
-
 </textarea>
 
 </div><!-- video tab-pane fade in Ends -->
-
 
 </div><!-- tab-content Ends -->
 
@@ -381,9 +365,6 @@ echo "<option value='$cat_id'>$cat_title</option>";
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends --> 
-
-
-
 
 </body>
 

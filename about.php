@@ -53,12 +53,8 @@ $about_desc = $row_about_us['about_desc'];
 
 </div><!-- col-md-12 Ends -->
 
-
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

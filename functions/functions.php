@@ -13,7 +13,6 @@ function getRealUserIp(){
  }
 /// IP address code Ends /////
 
-
 // items function Starts ///
 
 function items(){
@@ -31,7 +30,6 @@ $count_items = mysqli_num_rows($run_items);
 echo $count_items;
 
 }
-
 
 // items function Ends ///
 
@@ -55,25 +53,15 @@ $pro_id = $record['p_id'];
 
 $pro_qty = $record['qty'];
 
-
 $sub_total = $record['p_price']*$pro_qty;
 
 $total += $sub_total;
-
-
-
-
-
 
 }
 
 echo "$" . $total;
 
-
-
 }
-
-
 
 // total_price function Ends //
 
@@ -128,9 +116,7 @@ $product_price = "$$pro_price";
 
 }
 
-
 if($pro_label == ""){
-
 
 }
 else{
@@ -148,7 +134,6 @@ $product_label = "
 ";
 
 }
-
 
 echo "
 <div class 'row'>
@@ -187,13 +172,11 @@ echo "
 
 </a>
 
-
 </p>
 
 </div>
 
 $product_label
-
 
 </div>
 
@@ -206,7 +189,6 @@ $product_label
 }
 
 // getPro function Ends //
-
 
 /// getProducts Function Starts ///
 
@@ -320,7 +302,6 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
 $product_price = "<del> $$pro_price </del>";
@@ -336,9 +317,7 @@ $product_price = "$$pro_price";
 
 }
 
-
 if($pro_label == ""){
-
 
 }
 else{
@@ -356,7 +335,6 @@ $product_label = "
 ";
 
 }
-
 
 echo "
 
@@ -394,13 +372,11 @@ echo "
 
 </a>
 
-
 </p>
 
 </div>
 
 $product_label
-
 
 </div>
 
@@ -411,13 +387,9 @@ $product_label
 }
 /// getProducts function Code Ends ///
 
-
-
 }
 
-
 /// getProducts Function Ends ///
-
 
 /// getPaginator Function Starts ///
 
@@ -526,7 +498,5 @@ echo "' >".'🡪'."</a></li>";
 }
 
 /// getPaginator Function Ends ///
-
-
 
 ?>

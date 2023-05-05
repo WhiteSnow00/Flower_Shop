@@ -12,7 +12,6 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <hr>
 
-
 <div class="table-responsive" ><!-- table-responsive Starts -->
 
 <table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
@@ -42,11 +41,9 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 <td> Full Name: W.T.A <br> Mobile No: 05002020202 <br> Country: Istanbul
 </td>
 
-
 </tr>
 
 </tbody><!-- tbody Ends -->
-
 
 </table><!-- table table-bordered table-hover table-striped Ends -->
 

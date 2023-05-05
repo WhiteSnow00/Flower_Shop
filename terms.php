@@ -24,7 +24,6 @@ include("includes/main.php");
 
 <div class="container"><!-- container Starts -->
 
-
 <div class="col-md-3"><!-- col-md-3 Starts -->
 
 <div class="box"><!-- box Starts -->
@@ -127,7 +126,6 @@ $term_link = $row_terms['term_link'];
 
 <?php } ?>
 
-
 <?php
 
 $count_terms = "select * from terms";
@@ -152,11 +150,9 @@ $term_link = $row_terms['term_link'];
 
 <div id="<?php echo $term_link; ?>" class="tab-pane fade in"><!-- tab-pane fade in Starts -->
 
-
 <h1><?php echo $term_title; ?></h1>
 
 <p><?php echo $term_desc; ?></p>
-
 
 </div><!-- tab-pane fade in Ends -->
 
@@ -165,7 +161,6 @@ $term_link = $row_terms['term_link'];
 </div><!-- tab-content Ends -->
 
 </div><!-- box Ends -->
-
 
 </div><!-- col-md-9 Ends -->
 

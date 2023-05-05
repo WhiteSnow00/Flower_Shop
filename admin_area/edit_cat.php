@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <?php
@@ -54,7 +53,6 @@ $new_c_image = $row_edit['cat_image'];
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -124,7 +122,6 @@ $new_c_image = $row_edit['cat_image'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"></label>
@@ -180,8 +177,6 @@ echo "<script>window.open('index.php?view_cats','_self')</script>";
 }
 
 }
-
-
 
 ?>
 

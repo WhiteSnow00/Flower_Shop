@@ -37,7 +37,6 @@ $customer_image = $row_customer['customer_image'];
 
 <input type="text" name="c_name" class="form-control" required value="<?php echo $customer_name; ?>">
 
-
 </div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
@@ -45,7 +44,6 @@ $customer_image = $row_customer['customer_image'];
 <label> Email khách hàng: </label>
 
 <input type="text" name="c_email" class="form-control" required value="<?php echo $customer_email; ?>">
-
 
 </div><!-- form-group Ends -->
 
@@ -55,7 +53,6 @@ $customer_image = $row_customer['customer_image'];
 
 <input type="text" name="c_country" class="form-control" required value="<?php echo $customer_country; ?>">
 
-
 </div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
@@ -63,7 +60,6 @@ $customer_image = $row_customer['customer_image'];
 <label> Thành phố: </label>
 
 <input type="text" name="c_city" class="form-control" required value="<?php echo $customer_city; ?>">
-
 
 </div><!-- form-group Ends -->
 
@@ -73,7 +69,6 @@ $customer_image = $row_customer['customer_image'];
 
 <input type="text" name="c_contact" class="form-control" required value="<?php echo $customer_contact; ?>">
 
-
 </div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
@@ -81,7 +76,6 @@ $customer_image = $row_customer['customer_image'];
 <label> Địa chỉ: </label>
 
 <input type="text" name="c_address" class="form-control" required value="<?php echo $customer_address; ?>">
-
 
 </div><!-- form-group Ends -->
 
@@ -93,7 +87,6 @@ $customer_image = $row_customer['customer_image'];
 
 <img src="customer_images/<?php echo $customer_image; ?>" width="100" height="100" class="img-responsive" >
 
-
 </div><!-- form-group Ends -->
 
 <div class="text-center" ><!-- text-center Starts -->
@@ -104,9 +97,7 @@ $customer_image = $row_customer['customer_image'];
 
 </button>
 
-
 </div><!-- text-center Ends -->
-
 
 </form><!--- form Ends -->
 
@@ -147,6 +138,5 @@ echo "<script>window.open('logout.php','_self')</script>";
 }
 
 }
-
 
 ?>

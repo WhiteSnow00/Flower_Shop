@@ -11,7 +11,6 @@ include("includes/main.php");
 
 <?php
 
-
 $product_id = @$_GET['pro_id'];
 
 $get_product = "select * from products where product_url='$product_id'";
@@ -26,8 +25,6 @@ echo "<script> window.open('index.php','_self') </script>";
 
 }
 else{
-
-
 
 $row_product = mysqli_fetch_array($run_product);
 
@@ -57,7 +54,6 @@ $pro_url = $row_product['product_url'];
 
 if($pro_label == ""){
 
-
 }
 else{
 // Inner Style command
@@ -83,9 +79,6 @@ $row_p_cat = mysqli_fetch_array($run_p_cat);
 
 $p_cat_title = $row_p_cat['p_cat_title'];
 
-
-
-
 ?>
 
   <main>
@@ -101,10 +94,6 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
-
-
-
 
 <div class="col-md-12"><!-- col-md-12 Starts -->
 
@@ -170,7 +159,6 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 </div><!-- col-sm-6 Ends -->
 
-
 <div class="col-sm-6" ><!-- col-sm-6 Starts -->
 
 <div class="box" ><!-- box Starts -->
@@ -178,7 +166,6 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 <h1 class="text-center" > <?php echo $pro_title; ?> </h1>
 
 <?php
-
 
 if(isset($_POST['add_cart'])){
 
@@ -189,7 +176,6 @@ $p_id = $pro_id;
 $product_qty = $_POST['product_qty'];
 
 $product_size = $_POST['product_size'];
-
 
 $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
 
@@ -237,7 +223,6 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 }
 
-
 ?>
 
 <form action="" method="post" class="form-horizontal" ><!-- form-horizontal Starts -->
@@ -262,7 +247,6 @@ if($status == "product"){
 <option>4</option>
 <option>5</option>
 
-
 </select>
 
 </div><!-- col-md-7 Ends -->
@@ -277,25 +261,19 @@ if($status == "product"){
 
 <select name="product_size" class="form-control" >
 
-
 <option>Small (3 pieces)</option>
 <option>Medium (6 pieces)</option>
 <option>Large (9 pieces)</option>
-
-
-
 
 </select>
 
 </div>
 <!-- col-md-7 Ends -->
 
-
 </div>
 <!-- form-group Ends -->
 
 <?php }else { ?>
-
 
 <div class="form-group">
   <!-- form-group Starts -->
@@ -313,7 +291,6 @@ if($status == "product"){
 <option>3</option>
 <option>4</option>
 <option>5</option>
-
 
 <!-- </select> -->
 
@@ -337,26 +314,19 @@ if($status == "product"){
 <option>Medium</option>
 <option>Large</option>
 
-
 </select>
 
 </div>
 <!-- col-md-7 Ends -->
 
-
 </div>
 <!-- form-group Ends -->
 
-
 <?php } ?>
-
 
 <?php
 
 if($status == "product"){
-
-
-
 
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
@@ -390,7 +360,6 @@ Product Price : $$pro_price
 }
 else{
 
-
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
 echo "
@@ -420,7 +389,6 @@ Bundle Price : $$pro_price
 
 }
 
-
 }
 
 ?>
@@ -438,7 +406,6 @@ Bundle Price : $$pro_price
 <i class="fa fa-heart" ></i> Add to Wishlist
 
 </button>
-
 
 <?php
 
@@ -504,7 +471,6 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </div><!-- box Ends -->
 
-
 <div class="row" id="thumbs" ><!-- row Starts -->
 
 <div class="col-xs-4" ><!-- col-xs-4 Starts -->
@@ -537,12 +503,9 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </div><!-- col-xs-4 Ends -->
 
-
 </div><!-- row Ends -->
 
-
 </div><!-- col-sm-6 Ends -->
-
 
 </div><!-- row Ends -->
 
@@ -601,7 +564,6 @@ echo "Bundle Description";
 
 </div><!-- video tab-pane fade in  Ends -->
 
-
 </div><!-- tab-content Ends -->
 
 </div><!-- box Ends -->
@@ -611,8 +573,6 @@ echo "Bundle Description";
 <?php
 
 if($status == "product"){
-
-
 
 ?>
 
@@ -658,7 +618,6 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
 $product_price = "<del> $$pro_price </del>";
@@ -674,9 +633,7 @@ $product_price = "$$pro_price";
 
 }
 
-
 if($pro_label == ""){
-
 
 }
 else{
@@ -694,7 +651,6 @@ $product_label = "
 ";
 
 }
-
 
 echo "
 
@@ -732,13 +688,11 @@ echo "
 
 </a>
 
-
 </p>
 
 </div>
 
 $product_label
-
 
 </div>
 
@@ -746,9 +700,7 @@ $product_label
 
 ";
 
-
 }
-
 
 ?>
 
@@ -771,7 +723,6 @@ while($row_bundle_product_relation = mysqli_fetch_array($run_bundle_product_rela
 $bundle_product_relation_product_id = $row_bundle_product_relation['product_id'];
 
 $get_products = "select * from products where product_id='$bundle_product_relation_product_id'";
-
 
 $run_products = mysqli_query($con,$get_products);
 
@@ -800,7 +751,6 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
 $product_price = "<del> $$pro_price </del>";
@@ -816,9 +766,7 @@ $product_price = "$$pro_price";
 
 }
 
-
 if($pro_label == ""){
-
 
 }
 else{
@@ -836,7 +784,6 @@ $product_label = "
 ";
 
 }
-
 
 echo "
 
@@ -874,13 +821,11 @@ echo "
 
 </a>
 
-
 </p>
 
 </div>
 
 $product_label
-
 
 </div>
 
@@ -888,16 +833,11 @@ $product_label
 
 ";
 
-
 }
 
-
 }
-
-
 
 ?>
-
 
 <?php } ?>
 
@@ -905,11 +845,8 @@ $product_label
 
 </div><!-- col-md-12 Ends -->
 
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

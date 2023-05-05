@@ -36,12 +36,9 @@ Log in
 
 </button>
 
-
 </form><!-- form-login Ends -->
 
 </div><!-- container Ends -->
-
-
 
 </body>
 

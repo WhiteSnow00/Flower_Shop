@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -8,7 +7,6 @@ echo "<script>window.open('login.php','_self')</script>";
 }
 
 else {
-
 
 ?>
 
@@ -29,7 +27,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -131,7 +128,6 @@ echo "<option value='$p_id'> $p_title </option>";
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> </label>
@@ -153,7 +149,6 @@ echo "<option value='$p_id'> $p_title </option>";
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php
 
@@ -180,6 +175,5 @@ echo "<script>window.open('index.php?view_rel','_self')</script>";
 }
 
 ?>
-
 
 <?php } ?>

@@ -9,7 +9,6 @@ include("includes/main.php");
 
 ?>
 
-
   <!-- MAIN -->
   <main>
     <!-- Chechkout Pgae -->
@@ -22,13 +21,8 @@ include("includes/main.php");
     </div>
   </main>
 
-
-
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
-
-
 
 <div class="col-md-12" ><!-- col-md-12 Starts -->
 
@@ -38,25 +32,18 @@ if(!isset($_SESSION['customer_email'])){
 
 include("customer/customer_login.php");
 
-
 }else{
 
 include("payment_options.php");
 
 }
 
-
-
 ?>
-
 
 </div><!-- col-md-12 Ends -->
 
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

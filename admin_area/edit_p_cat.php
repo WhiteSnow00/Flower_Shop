@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <?php
@@ -34,7 +33,6 @@ $p_cat_image = $row_edit['p_cat_image'];
 $new_p_cat_image = $row_edit['p_cat_image'];
 
 }
-
 
 ?>
 
@@ -70,9 +68,7 @@ $new_p_cat_image = $row_edit['p_cat_image'];
 
 </h3><!-- panel-title Ends -->
 
-
 </div><!-- panel-heading Ends -->
-
 
 <div class="panel-body" ><!-- panel-body Starts -->
 
@@ -142,7 +138,6 @@ $new_p_cat_image = $row_edit['p_cat_image'];
 
 </div><!-- panel-body Ends -->
 
-
 </div><!-- panel panel-default Ends -->
 
 </div><!-- col-lg-12 Ends -->
@@ -160,7 +155,6 @@ $p_cat_top = $_POST['p_cat_top'];
 $p_cat_image = $_FILES['p_cat_image']['name'];
 
 $temp_name = $_FILES['p_cat_image']['tmp_name'];
-
 
 move_uploaded_file($temp_name,"other_images/$p_cat_image");
 
@@ -182,13 +176,8 @@ echo "<script>window.open('index.php?view_p_cats','_self')</script>";
 
 }
 
-
-
 }
 
-
-
 ?>
-
 
 <?php } ?>

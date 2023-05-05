@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,9 +8,7 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
-
 
 <div class="row" ><!-- 1 row Starts -->
 
@@ -105,7 +102,6 @@ $i++;
 
 </td>
 
-
 <td>
 
 <a href="index.php?edit_enquiry=<?php echo $enquiry_id; ?>">
@@ -115,7 +111,6 @@ $i++;
 </a>
 
 </td>
-
 
 </tr>
 
@@ -134,7 +129,5 @@ $i++;
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
-
 
 <?php } ?>

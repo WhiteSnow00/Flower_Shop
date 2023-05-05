@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -8,7 +7,6 @@ echo "<script>window.open('login.php','_self')</script>";
 }
 
 else {
-
 
 ?>
 
@@ -29,7 +27,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -68,11 +65,9 @@ else {
 <th>Order Status:</th>
 <th>Delete Order:</th>
 
-
 </tr>
 
 </thead><!-- thead Ends -->
-
 
 <tbody><!-- tbody Starts -->
 
@@ -174,7 +169,6 @@ echo $order_status='Complete';
 
 }
 
-
 ?>
 </td>
 
@@ -187,7 +181,6 @@ echo $order_status='Complete';
 </a>
 
 </td>
-
 
 </tr>
 
@@ -206,6 +199,5 @@ echo $order_status='Complete';
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
 
 <?php } ?>

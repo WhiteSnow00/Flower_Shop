@@ -1,6 +1,5 @@
 <?php
 
-
 include("includes/db.php");
 include("includes/header.php");
 include("functions/functions.php");
@@ -33,9 +32,7 @@ $pro_size = $row_cart['size'];
 
 $pro_qty = $row_cart['qty'];
 
-
 $sub_total = $row_cart['p_price']*$pro_qty;
-
 
 $insert_customer_order = "insert into customer_orders (customer_id,due_amount,invoice_no,qty,size,order_date,order_status) values ('$customer_id','$sub_total','$invoice_no','$pro_qty','$pro_size',NOW(),'$status')";
 
@@ -52,10 +49,6 @@ $run_delete = mysqli_query($con,$delete_cart);
 echo "<script>alert('Your order has been submitted,Thanks ')</script>";
 
 echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
-
-
-
-
 
 }
 

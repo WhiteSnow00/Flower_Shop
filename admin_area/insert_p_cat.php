@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <div class="row"><!-- 1 row Starts -->
@@ -43,9 +42,7 @@ else {
 
 </h3><!-- panel-title Ends -->
 
-
 </div><!-- panel-heading Ends -->
-
 
 <div class="panel-body" ><!-- panel-body Starts -->
 
@@ -109,7 +106,6 @@ else {
 
 </div><!-- panel-body Ends -->
 
-
 </div><!-- panel panel-default Ends -->
 
 </div><!-- col-lg-12 Ends -->
@@ -142,13 +138,8 @@ echo "<script>window.open('index.php?view_p_cats','_self')</script>";
 
 }
 
-
-
 }
 
-
-
 ?>
-
 
 <?php } ?>

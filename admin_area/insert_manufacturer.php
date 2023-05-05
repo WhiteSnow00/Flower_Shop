@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,9 +8,7 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
-
 
 <div class="row"><!-- 1 row Starts -->
 
@@ -30,7 +27,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 

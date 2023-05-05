@@ -19,11 +19,8 @@ include("includes/main.php");
     </div>
   </main>
 
-
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
-
 
 <div class="col-md-9" id="cart" ><!-- col-md-9 Starts -->
 
@@ -66,7 +63,6 @@ $count = mysqli_num_rows($run_cart);
 <th colspan="1">Delete</th>
 
 <th colspan="2"> Sub Total </th>
-
 
 </tr>
 
@@ -184,7 +180,6 @@ $<?php echo $sub_total; ?>.00
 
 </div><!-- table-responsive Ends -->
 
-
 <div class="box-footer"><!-- box-footer Starts -->
 
 <div class="pull-left"><!-- pull-left Starts -->
@@ -217,7 +212,6 @@ Proceed to checkout <i class="fa fa-chevron-right"></i>
 
 </form><!-- form Ends -->
 
-
 </div><!-- box Ends -->
 
 <?php
@@ -227,7 +221,6 @@ if(isset($_POST['apply_coupon'])){
 $code = $_POST['code'];
 
 if($code == ""){
-
 
 }
 else{
@@ -250,7 +243,6 @@ $coupon_limit = $row_coupons['coupon_limit'];
 
 $coupon_used = $row_coupons['coupon_used'];
 
-
 if($coupon_limit == $coupon_used){
 
 echo "<script>alert('Your Coupon Code Has Been Expired')</script>";
@@ -263,7 +255,6 @@ $get_cart = "select * from cart where p_id='$coupon_pro' AND ip_add='$ip_add'";
 $run_cart = mysqli_query($con,$get_cart);
 
 $check_cart = mysqli_num_rows($run_cart);
-
 
 if($check_cart == 1){
 //update the coupon table with a certain value of a coupon code
@@ -297,9 +288,7 @@ echo "<script> alert('Your Coupon Code Is Not Valid') </script>";
 
 }
 
-
 }
-
 
 ?>
 
@@ -313,7 +302,6 @@ if(isset($_POST['update'])){
 
 foreach($_POST['remove'] as $remove_id){
 
-
 $delete_product = "delete from cart where p_id='$remove_id'";
 
 $run_delete = mysqli_query($con,$delete_product);
@@ -322,26 +310,15 @@ if($run_delete){
 echo "<script>window.open('cart.php','_self')</script>";
 }
 
-
-
 }
 
-
-
-
 }
-
-
 
 }
 
 echo @$up_cart = update_cart();
 
-
-
 ?>
-
-
 
 <div id="row same-height-row"><!-- row same-height-row Starts -->
 
@@ -387,7 +364,6 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-
 if($pro_label == "Sale" or $pro_label == "Gift"){
 
 $product_price = "<del> $$pro_price </del>";
@@ -403,9 +379,7 @@ $product_price = "$$pro_price";
 
 }
 
-
 if($pro_label == ""){
-
 
 }
 else{
@@ -423,7 +397,6 @@ $product_label = "
 ";
 
 }
-
 
 echo "
 
@@ -461,13 +434,11 @@ echo "
 
 </a>
 
-
 </p>
 
 </div>
 
 $product_label
-
 
 </div>
 
@@ -475,17 +446,11 @@ $product_label
 
 ";
 
-
 }
-
-
-
 
 ?>
 
-
 </div><!-- row same-height-row Ends -->
-
 
 </div><!-- col-md-9 Ends -->
 
@@ -554,8 +519,6 @@ Shipping and additional costs are calculated based on the values you have entere
 </div><!-- container Ends -->
 </div><!-- content Ends -->
 
-
-
 <?php
 
 include("includes/footer.php");
@@ -592,21 +555,11 @@ $("body").load('cart_body.php');
 
 }
 
-
-
-
 });
-
 
 }
 
-
-
-
 });
-
-
-
 
 });
 

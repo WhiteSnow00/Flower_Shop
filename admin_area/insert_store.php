@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -64,8 +63,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> store Image : </label>
@@ -78,7 +75,6 @@ else {
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> store Description : </label>
@@ -87,14 +83,11 @@ else {
 
 <textarea name="store_desc" class="form-control" rows="10" cols="19">
 
-
-
 </textarea>
 
 </div>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -131,7 +124,6 @@ else {
 </div>
 
 </div><!-- form-group Ends -->
-
 
 </form><!-- form-horizontal Ends -->
 

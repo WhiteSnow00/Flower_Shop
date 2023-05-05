@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -8,7 +7,6 @@ echo "<script>window.open('login.php','_self')</script>";
 }
 
 else {
-
 
 ?>
 
@@ -95,7 +93,6 @@ $coupon_code = $row_coupons['coupon_code'];
 $coupon_limit = $row_coupons['coupon_limit'];
 
 $coupon_used = $row_coupons['coupon_used'];
-
 
 $get_products = "select * from products where product_id='$product_id'";
 

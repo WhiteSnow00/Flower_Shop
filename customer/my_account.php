@@ -6,14 +6,12 @@ if(!isset($_SESSION['customer_email'])){
 
 echo "<script>window.open('../checkout.php','_self')</script>";
 
-
 }else {
 
 include("includes/db.php");
 include("../includes/header.php");
 include("functions/functions.php");
 include("includes/main.php");
-
 
 ?>
   <main>
@@ -29,8 +27,6 @@ include("includes/main.php");
 
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
-
 
 <div class="col-md-12"><!-- col-md-12 Starts -->
 
@@ -124,8 +120,6 @@ echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 
 }
 
-
-
 if(isset($_GET['my_orders'])){
 
 include("my_orders.php");
@@ -172,13 +166,10 @@ include("delete_wishlist.php");
 
 </div><!-- box Ends -->
 
-
 </div><!--- col-md-9 Ends -->
 
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

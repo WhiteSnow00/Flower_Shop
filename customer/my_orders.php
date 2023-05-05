@@ -9,9 +9,7 @@
 
 If you have any questions, please feel free to <a href="../contact.php" > contact us</a> , our customer service center is working for you 24/7.
 
-
 </p>
-
 
 </center><!-- center Ends -->
 
@@ -33,7 +31,6 @@ If you have any questions, please feel free to <a href="../contact.php" > contac
 <th>Order Date:</th>
 <th>Paid/Unpaid:</th>
 <th>Status:</th>
-
 
 </tr>
 
@@ -110,13 +107,11 @@ $order_status = "Paid";
 <a href="confirm.php?order_id=<?php echo $order_id; ?>" target="blank" class="btn btn-primary btn-sm" > Confirm Payment </a>
 </td>
 
-
 </tr><!-- tr Ends -->
 
 <?php } ?>
 
 </tbody><!--- tbody Ends --->
-
 
 </table><!-- table table-bordered table-hover Ends -->
 

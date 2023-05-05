@@ -35,10 +35,7 @@ include("includes/main.php");
 
 </ul><!-- breadcrumb Ends -->
 
-
-
 </div><!--- col-md-12 Ends -->
-
 
 <div class="col-md-12" ><!-- col-md-12 Starts -->
 
@@ -72,11 +69,8 @@ include("includes/main.php");
 
 </div><!-- col-md-12 Ends -->
 
-
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

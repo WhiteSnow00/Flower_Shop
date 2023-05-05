@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -44,14 +42,9 @@ $admin_contact = $row_admin['admin_contact'];
 
 $admin_about = $row_admin['admin_about'];
 
-
-
 }
 
-
-
 ?>
-
 
 <div class="row" ><!-- 1  row Starts -->
 
@@ -64,8 +57,6 @@ $admin_about = $row_admin['admin_about'];
 <i class="fa fa-dashboard" ></i> Dashboard / Edit Profile
 
 </li>
-
-
 
 </ol><!-- breadcrumb Ends -->
 
@@ -87,9 +78,7 @@ $admin_about = $row_admin['admin_about'];
 
 </h3>
 
-
 </div><!-- panel-heading Ends -->
-
 
 <div class="panel-body"><!-- panel-body Starts -->
 
@@ -107,7 +96,6 @@ $admin_about = $row_admin['admin_about'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Email: </label>
@@ -119,7 +107,6 @@ $admin_about = $row_admin['admin_about'];
 </div><!-- col-md-6 Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -145,7 +132,6 @@ $admin_about = $row_admin['admin_about'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Job: </label>
@@ -158,7 +144,6 @@ $admin_about = $row_admin['admin_about'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label">User Contact: </label>
@@ -170,7 +155,6 @@ $admin_about = $row_admin['admin_about'];
 </div><!-- col-md-6 Ends -->
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -198,7 +182,6 @@ $admin_about = $row_admin['admin_about'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"></label>
@@ -211,7 +194,6 @@ $admin_about = $row_admin['admin_about'];
 
 </div><!-- form-group Ends -->
 
-
 </form><!-- form-horizontal Ends -->
 
 </div><!-- panel-body Ends -->
@@ -219,7 +201,6 @@ $admin_about = $row_admin['admin_about'];
 </div><!-- panel panel-default Ends -->
 
 </div><!-- col-lg-12 Ends -->
-
 
 </div><!-- 2 row Ends -->
 
@@ -240,7 +221,6 @@ $admin_job = $_POST['admin_job'];
 $admin_contact = $_POST['admin_contact'];
 
 $admin_about = $_POST['admin_about'];
-
 
 $admin_image = $_FILES['admin_image']['name'];
 
@@ -270,9 +250,6 @@ session_destroy();
 
 }
 
-
 ?>
-
-
 
 <?php }  ?>

@@ -6,7 +6,6 @@ if(!isset($_SESSION['customer_email'])){
 
 echo "<script>window.open('../checkout.php','_self')</script>";
 
-
 }else {
 
 include("C:/xampp/htdocs/Wurood/website1/includes/db.php");
@@ -22,11 +21,8 @@ $order_id = $_GET['order_id'];
 
 ?>
 
-
-
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
-
 
 <div class="col-md-3"><!-- col-md-3 Starts -->
 
@@ -40,7 +36,6 @@ $order_id = $_GET['order_id'];
 
 <h1 align="center"> Please Confirm Your Payment </h1>
 
-
 <form action="confirm.php?update_id=<?php echo $order_id; ?>" method="post" enctype="multipart/form-data"><!--- form Starts -->
 
 <div class="form-group"><!-- form-group Starts -->
@@ -50,7 +45,6 @@ $order_id = $_GET['order_id'];
 <input type="text" class="form-control" name="invoice_no" required>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -83,7 +77,6 @@ $order_id = $_GET['order_id'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label>Mobile Payment Code:</label>
@@ -91,7 +84,6 @@ $order_id = $_GET['order_id'];
 <input type="text" class="form-control" name="code" required>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -153,14 +145,9 @@ echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 
 }
 
-
-
 }
 
-
-
 ?>
-
 
 </div><!-- box Ends -->
 
@@ -168,8 +155,6 @@ echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 

@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <?php
@@ -29,9 +28,7 @@ echo "<script>window.open('index.php?view_users','_self')</script>";
 
 }
 
-
 }
-
 
 ?>
 

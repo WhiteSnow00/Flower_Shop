@@ -10,7 +10,6 @@ else {
 
 ?>
 
-
 <div class="row"><!-- 1 row Starts -->
 
 <div class="col-lg-12"><!-- col-lg-12 Starts -->
@@ -28,7 +27,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -61,7 +59,6 @@ else {
 <th>Delete Product Category</th>
 <th>Edit Product Category</th>
 
-
 </tr>
 
 </thead><!-- thead Ends -->
@@ -82,7 +79,6 @@ $p_cat_id = $row_p_cats['p_cat_id'];
 
 $p_cat_title = $row_p_cats['p_cat_title'];
 
-
 $i++;
 
 ?>
@@ -92,7 +88,6 @@ $i++;
 <td> <?php echo $i; ?> </td>
 
 <td> <?php echo $p_cat_title; ?> </td>
-
 
 <td> 
 
@@ -114,7 +109,6 @@ $i++;
 
 </td>
 
-
 </tr>
 
 <?php } ?>
@@ -132,7 +126,5 @@ $i++;
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 2 row Ends -->
-
-
 
 <?php } ?>

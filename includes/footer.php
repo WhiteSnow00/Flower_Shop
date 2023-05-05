@@ -66,7 +66,6 @@
 				</ul>
 			</div>
 
-
 			<div class="footer-nav__col footer-nav__col--contacts">
 				<div class="footer-nav__heading">Contact details</div>
 				<address class="address">
@@ -89,7 +88,6 @@
 	<div class="banners">
 		<div class="container clearfix">
 
-
 		</div>
 	</div>
 
@@ -99,8 +97,6 @@
 			<div class="copyright">
 				&copy; 2021 Wurood Flowershop
 			</div>
-
-
 
 			<div class="designby">
 				Design by Waddah, Tayma, Abdallah

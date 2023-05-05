@@ -31,7 +31,6 @@
 
 <?php
 
-
 $customer_session = $_SESSION['customer_email'];
 
 $get_customer = "select * from customers where customer_email='$customer_session'";
@@ -43,7 +42,6 @@ $row_customer = mysqli_fetch_array($run_customer);
 $customer_id = $row_customer['customer_id'];
 
 $i = 0; //wishlistnumber
-
 
 $get_wishlist = "select * from wishlist where customer_id='$customer_id'";
 

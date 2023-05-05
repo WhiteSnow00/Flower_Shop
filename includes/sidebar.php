@@ -59,7 +59,6 @@ $aCat[(int)$sVal] = (int)$sVal;
 
 /// Categories Code Ends ///
 
-
 ?>
 
 <div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Starts -->
@@ -95,7 +94,6 @@ Hide
 <div class="input-group"><!-- input-group Starts -->
 
 <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-manufacturer" placeholder="Filter Suppliers">
-
 
 <a class="input-group-addon"> <i class="fa fa-search"></i> </a>
 
@@ -161,9 +159,7 @@ $manufacturer_title
 
 ";
 
-
 }
-
 
 $get_manfacturer = "select * from manufacturers where manufacturer_top='no'";
 
@@ -178,7 +174,6 @@ $manufacturer_title = $row_manfacturer['manufacturer_title'];
 $manufacturer_image = $row_manfacturer['manufacturer_image'];
 
 if($manufacturer_image == ""){
-
 
 }
 else{
@@ -228,9 +223,7 @@ $manufacturer_title
 
 </div><!-- panel-collapse collapse-data Ends -->
 
-
 </div><!-- panel panel-default sidebar-menu Ends -->
-
 
 <div class="panel panel-default sidebar-menu"><!--- panel panel-default sidebar-menu Starts -->
 
@@ -292,7 +285,6 @@ $p_cat_image = $row_p_cats['p_cat_image'];
 
 if($p_cat_image == ""){
 
-
 }
 else{
 
@@ -329,7 +321,6 @@ $p_cat_title
 
 ";
 
-
 }
 
 $get_p_cats = "select * from product_categories where p_cat_top='no'";
@@ -345,7 +336,6 @@ $p_cat_title = $row_p_cats['p_cat_title'];
 $p_cat_image = $row_p_cats['p_cat_image'];
 
 if($p_cat_image == ""){
-
 
 }
 else{
@@ -383,7 +373,6 @@ $p_cat_title
 
 ";
 
-
 }
 
 ?>
@@ -395,8 +384,6 @@ $p_cat_title
 </div><!-- panel-collapse collapse-data Ends -->
 
 </div><!--- panel panel-default sidebar-menu Ends -->
-
-
 
 <div class="panel panel-default sidebar-menu"><!--- panel panel-default sidebar-menu Starts -->
 
@@ -419,7 +406,6 @@ Hide
 </a>
 
 </div><!-- pull-right Ends -->
-
 
 </h3><!-- panel-title Ends -->
 
@@ -495,7 +481,6 @@ $cat_title
 
 }
 
-
 $get_cat = "select * from categories where cat_top='no'";
 
 $run_cat = mysqli_query($con,$get_cat);
@@ -545,7 +530,6 @@ $cat_title
 ";
 
 }
-
 
 ?>
 

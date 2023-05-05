@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -9,9 +7,6 @@ echo "<script>window.open('login.php','_self')</script>";
 }
 
 else {
-
-
-
 
 ?>
 
@@ -34,7 +29,6 @@ else {
 </div><!-- col-lg-12 Ends -->
 
 </div><!-- 1 row Ends -->
-
 
 <div class="row"><!-- 2 row Starts -->
 
@@ -82,7 +76,6 @@ else {
 
 </div><!-- col-lg-3 col-md-6 Ends -->
 
-
 <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
 
 <div class="panel panel-green"><!-- panel panel-green Starts -->
@@ -126,7 +119,6 @@ else {
 </div><!-- panel panel-green Ends -->
 
 </div><!-- col-lg-3 col-md-6 Ends -->
-
 
 <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
 
@@ -172,7 +164,6 @@ else {
 
 </div><!-- col-lg-3 col-md-6 Ends -->
 
-
 <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 Starts -->
 
 <div class="panel panel-red"><!-- panel panel-red Starts -->
@@ -217,7 +208,6 @@ else {
 
 </div><!-- col-lg-3 col-md-6 Ends -->
 
-
 </div><!-- 2 row Ends -->
 
 <div class="row" ><!-- 3 row Starts -->
@@ -253,7 +243,6 @@ else {
 <th>Product Size:</th>
 <th>Status:</th>
 
-
 </tr>
 
 </thead><!-- thead Ends -->
@@ -269,7 +258,6 @@ $run_order = mysqli_query($con,$get_order);
 
 while($row_order=mysqli_fetch_array($run_order)){
 
-
 $order_id = $row_order['order_id'];
 
 $c_id = $row_order['customer_id'];
@@ -283,7 +271,6 @@ $qty = $row_order['qty'];
 $size = $row_order['size'];
 
 $order_status = $row_order['order_status'];
-
 
 $i++;
 
@@ -330,7 +317,6 @@ echo $order_status='Complete';
 
 </tbody><!-- tbody Ends -->
 
-
 </table><!-- table table-bordered table-hover table-striped Ends -->
 
 </div><!-- table-responsive Ends -->
@@ -344,7 +330,6 @@ View All Orders <i class="fa fa-arrow-circle-right" ></i>
 </a>
 
 </div><!-- text-right Ends -->
-
 
 </div><!-- panel-body Ends -->
 

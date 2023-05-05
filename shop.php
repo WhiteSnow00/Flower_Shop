@@ -20,13 +20,10 @@ include("includes/main.php");
     </div>
   </main>
 
-
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->
 
 <div class="col-md-12" ><!--- col-md-12 Starts -->
-
-
 
 </div><!--- col-md-12 Ends -->
 
@@ -37,7 +34,6 @@ include("includes/main.php");
 </div><!-- col-md-3 Ends -->
 
 <div class="col-md-9" ><!-- col-md-9 Starts --->
-
 
 <?php getProducts(); ?>
 
@@ -53,18 +49,12 @@ include("includes/main.php");
 
 </center><!-- center Ends -->
 
-
-
 </div><!-- col-md-9 Ends --->
-
-
 
 </div><!--- wait Ends -->
 
 </div><!-- container Ends -->
 </div><!-- content Ends -->
-
-
 
 <?php
 
@@ -157,13 +147,9 @@ $('[data-action="filter"][id="dev-table-filter"]').filterTable();
 
 });
 
-
-
 </script>
 
-
 <script>
-
 
 $(document).ready(function(){
 
@@ -332,7 +318,6 @@ getProducts();
 
 });
 
-
   $('.get_p_cat').click(function(){
 
 getProducts();
@@ -344,7 +329,6 @@ $('.get_cat').click(function(){
 getProducts();
 
 });
-
 
  });
 

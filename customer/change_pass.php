@@ -11,7 +11,6 @@
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label>Nhập mật khẩu mới</label>
@@ -19,7 +18,6 @@
 <input type="text" name="new_pass" class="form-control" required>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -84,21 +82,9 @@ echo "<script>alert('your Password Has been Changed Successfully')</script>";
 
 echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 
-
 }
 
-
-
-
 }
-
-
 
 ?>
-
-
-
-
-
-
 

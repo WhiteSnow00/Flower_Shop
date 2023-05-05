@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -92,13 +90,11 @@ $term_desc = substr($row_terms['term_desc'],0,400);
 
 </a>
 
-
 <a href="index.php?edit_term=<?php echo $term_id; ?>" class="pull-right">
 
 <i class="fa fa-pencil"></i> Edit
 
 </a>
-
 
 <div class="clearfix"> </div>
 

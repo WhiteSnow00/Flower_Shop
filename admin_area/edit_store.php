@@ -1,6 +1,5 @@
 <?php
 
-
 if(!isset($_SESSION['admin_email'])){
 
 echo "<script>window.open('login.php','_self')</script>";
@@ -13,7 +12,7 @@ else {
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>tinymce.init({ selector:'textarea' });</script>
-  
+
 <?php
 
 if(isset($_GET['edit_store'])){
@@ -39,7 +38,6 @@ $store_button = $row_store['store_button'];
 $store_url = $row_store['store_url'];
 
 $new_s_image = $row_store['store_image'];
-
 
 }
 
@@ -95,8 +93,6 @@ $new_s_image = $row_store['store_image'];
 
 </div><!-- form-group Ends -->
 
-
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> store Image : </label>
@@ -113,7 +109,6 @@ $new_s_image = $row_store['store_image'];
 
 </div><!-- form-group Ends -->
 
-
 <div class="form-group"><!-- form-group Starts -->
 
 <label class="col-md-3 control-label"> store Description : </label>
@@ -129,7 +124,6 @@ $new_s_image = $row_store['store_image'];
 </div>
 
 </div><!-- form-group Ends -->
-
 
 <div class="form-group"><!-- form-group Starts -->
 
@@ -166,7 +160,6 @@ $new_s_image = $row_store['store_image'];
 </div>
 
 </div><!-- form-group Ends -->
-
 
 </form><!-- form-horizontal Ends -->
 

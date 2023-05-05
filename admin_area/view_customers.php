@@ -8,7 +8,6 @@ echo "<script>window.open('login.php','_self')</script>";
 
 else {
 
-
 ?>
 
 <div class="row"><!-- 1 row Starts -->
@@ -45,7 +44,6 @@ else {
 
 </div><!-- panel-heading Ends -->
 
-
 <div class="panel-body" ><!-- panel-body Starts -->
 
 <div class="table-responsive" ><!-- table-responsive Starts -->
@@ -65,11 +63,9 @@ else {
 <th>Customer Phone Number:</th>
 <th>Customer Delete:</th>
 
-
 </tr>
 
 </thead><!-- thead Ends -->
-
 
 <tbody><!-- tbody Starts -->
 
@@ -99,9 +95,6 @@ $c_contact = $row_c['customer_contact'];
 
 $i++;
 
-
-
-
 ?>
 
 <tr>
@@ -128,25 +121,19 @@ $i++;
 
 </a>
 
-
 </td>
-
 
 </tr>
 
 <?php } ?>
 
-
 </tbody><!-- tbody Ends -->
-
-
 
 </table><!-- table table-bordered table-hover table-striped Ends -->
 
 </div><!-- table-responsive Ends -->
 
 </div><!-- panel-body Ends -->
-
 
 </div><!-- panel panel-default Ends -->
 
