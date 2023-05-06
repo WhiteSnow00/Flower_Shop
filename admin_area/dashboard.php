@@ -284,12 +284,18 @@ $i++;
 <?php
 
 $get_customer = "select * from customers where customer_id='$c_id'";
-$run_customer = mysqli_query($con,$get_customer);
+$run_customer = mysqli_query($con, $get_customer);
 $row_customer = mysqli_fetch_array($run_customer);
-$customer_email = $row_customer['customer_email'];
-echo $customer_email;
+
+if ($row_customer) {
+    $customer_email = $row_customer['customer_email'];
+    echo $customer_email;
+} else {
+    echo "No customer found with customer_id = '$c_id'";
+}
 ?>
 </td>
+
 
 <td><?php echo $invoice_no; ?></td>
 <td><?php echo $product_id; ?></td>

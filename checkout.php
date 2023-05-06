@@ -14,7 +14,7 @@ include("includes/main.php");
     <!-- Chechkout Pgae -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">Login Page</span>
+        <span class="nero__bold">Đăng nhập</span>
       </div>
       <p class="nero__text">
       </p>

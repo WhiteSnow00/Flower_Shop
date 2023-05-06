@@ -1,24 +1,30 @@
 <?php
-
 session_start();
-
 include("includes/db.php");
 include("includes/header.php");
 include("functions/functions.php");
 include("includes/main.php");
-
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Title</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
   <!-- MAIN -->
   <main>
-    <!-- HERO -->
-    <div class="nero">
-      <div class="nero__heading">
-        <span class="nero__bold">shop</span> AT WUROOD
-      </div>
-      <p class="nero__text">
-      </p>
+  <!-- HERO -->
+  <div class="nero">
+    <div class="nero__heading">
+      <span class="nero__bold text-stroke">Danh sách hoa</span>
     </div>
-  </main>
+    <p class="nero__text text-stroke">
+    </p>
+  </div>
+</main>
 
 <div id="content" ><!-- content Starts -->
 <div class="container" ><!-- container Starts -->

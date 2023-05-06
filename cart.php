@@ -14,7 +14,7 @@ include("includes/main.php");
     <!-- Shopping Cart Page -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">SHOP</span> Cart
+        <span class="nero__bold">Thanh</span> toán
       </div>
       <p class="nero__text">
       </p>
@@ -30,7 +30,7 @@ include("includes/main.php");
 
 <form action="cart.php" method="post" enctype="multipart-form-data" ><!-- form Starts -->
 
-<h1> Shopping Cart </h1>
+<h1> Thanh toán </h1>
 
 <?php
 
@@ -44,7 +44,7 @@ $count = mysqli_num_rows($run_cart);
 
 ?>
 
-<p class="text-muted" > You currently have <?php echo $count; ?> item(s) in your cart. </p>
+<p class="text-muted" > Bạn đang có <?php echo $count; ?> sản phẩm trong giỏ hàng. </p>
 
 <div class="table-responsive" ><!-- table-responsive Starts -->
 
@@ -54,17 +54,17 @@ $count = mysqli_num_rows($run_cart);
 
 <tr>
 
-<th colspan="2" >Product</th>
+<th colspan="2" >Loại hàng</th>
 
-<th>Quantity</th>
+<th>Số lượng</th>
 
-<th>Unit Price</th>
+<th>Giá</th>
 
-<th>Size</th>
+<th>Kích cỡ</th>
 
-<th colspan="1">Delete</th>
+<th colspan="1">Xóa</th>
 
-<th colspan="2"> Sub Total </th>
+<th colspan="2"> Thành tiền </th>
 
 </tr>
 
@@ -170,13 +170,13 @@ $<?php echo $sub_total; ?>.00
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Coupon Code : </label>
+<label>Mã giảm giá : </label>
 
 <input type="text" name="code" class="form-control">
 
 </div><!-- form-group Ends -->
 
-<input class="btn btn-primary" type="submit" name="apply_coupon" value="Apply Coupon Code" >
+<input class="btn btn-primary" type="submit" name="apply_coupon" value="Áp mã giảm giá" >
 
 </div><!-- form-inline pull-right Ends -->
 
@@ -188,7 +188,7 @@ $<?php echo $sub_total; ?>.00
 
 <a href="index.php" class="btn btn-default">
 
-<i class="fa fa-chevron-left"></i> Continue Shopping
+<i class="fa fa-chevron-left"></i> Tiếp tục mua sắm
 
 </a>
 
@@ -198,13 +198,13 @@ $<?php echo $sub_total; ?>.00
 
 <button class="btn btn-default" type="submit" name="update" value="Update Cart">
 
-<i class="fa fa-refresh"></i> Update Cart
+<i class="fa fa-refresh"></i> Cập nhật giỏ hàng
 
 </button>
 
 <a href="checkout.php" class="btn btn-primary">
 
-Proceed to checkout <i class="fa fa-chevron-right"></i>
+Thanh toán <i class="fa fa-chevron-right"></i>
 
 </a>
 

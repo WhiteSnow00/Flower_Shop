@@ -11,11 +11,11 @@
           <a class="currency__change" href="customer/my_account.php?my_orders">
           <?php
           if(!isset($_SESSION['customer_email'])){
-          echo "Welcome Guest";
+          echo "Chào mừng";
           }
           else
           {
-              echo "Welcome:  " . $_SESSION['customer_email'] . "";
+              echo "Chào mừng:  " . $_SESSION['customer_email'] . "";
             }
 ?>
           </a>
@@ -24,7 +24,7 @@
         <div class="basket">
           <a href="cart.php" class="btn btn--basket">
             <i class="icon-basket"></i>
-            <?php items(); ?> items
+            <?php items(); ?> món
           </a>
         </div>
 
@@ -33,7 +33,7 @@
 <li class="login__item">
 <?php
 if(!isset($_SESSION['customer_email'])){
-  echo '<a href="customer_register.php" class="login__link">Register</a>';
+  echo '<a href="customer_register.php" class="login__link">Đăng ký</a>';
 }
 ?>
 </li>
@@ -41,11 +41,11 @@ if(!isset($_SESSION['customer_email'])){
 <li class="login__item">
 <?php
 if(!isset($_SESSION['customer_email'])){
-  echo '<a href="checkout.php" class="login__link">Sign In</a>';
+  echo '<a href="checkout.php" class="login__link">Đăng nhập</a>';
 }
   else
   {
-      echo '<a href="logout.php" class="login__link">Log out</a>';
+      echo '<a href="logout.php" class="login__link">Đăng xuất</a>';
   }
 ?>
 
@@ -68,28 +68,28 @@ if(!isset($_SESSION['customer_email'])){
 
             <li class="categories__item">
               <a class="categories__link categories__link--active" href="shop.php">
-                Shop
+                Cửa hàng
               </a>
             </li>
 
           <li class="categories__item">
               <a class="categories__link" href="customer/my_account.php?my_orders">
-                My Account
+                Tài khoản
                 <i class="icon-down-open-1"></i>
               </a>
               <div class="dropdown dropdown--lookbook">
                 <div class="clearfix">
                   <div class="dropdown__half">
-                    <div class="dropdown__heading">Account Settings</div>
+                    <div class="dropdown__heading">Cài đặt tài khoản</div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Wishlist</a>
+                        <a href="#" class="dropdown__link">Danh sách mong muốn</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Orders</a>
+                        <a href="#" class="dropdown__link">Giỏ hàng</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">View Shopping Cart</a>
+                        <a href="#" class="dropdown__link">Xem thẻ mua hàng</a>
                       </li>
                     </ul>
                   </div>
@@ -97,13 +97,13 @@ if(!isset($_SESSION['customer_email'])){
                     <div class="dropdown__heading"></div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Edit Your Account</a>
+                        <a href="#" class="dropdown__link">Sửa thông tin tài khoản</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Change Password</a>
+                        <a href="#" class="dropdown__link">Thay đổi mật khẩu</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Delete Account</a>
+                        <a href="#" class="dropdown__link">Xóa tài khoản</a>
                       </li>
                     </ul>
                   </div>

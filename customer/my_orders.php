@@ -1,13 +1,13 @@
 
 <center><!-- center Starts -->
 
-<h1>My Orders</h1>
+<h1>Đơn hàng của tôi</h1>
 
 <p class="lead"> Your orders in one Place.</p>
 
 <p class="text-muted" >
 
-If you have any questions, please feel free to <a href="../contact.php" > contact us</a> , our customer service center is working for you 24/7.
+Nếu có câu hỏi gì hãy <a href="../contact.php" > liên lạc chúng tôi</a> , dịch vụ của chúng tôi sẽ hỗ trợ bạn 24/7.
 
 </p>
 

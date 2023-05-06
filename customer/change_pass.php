@@ -1,5 +1,5 @@
 
-<h1 align="center">Change Password </h1>
+<h1 align="center">Thay đổi mật khẩu </h1>
 
 <form action="" method="post"><!-- form Starts -->
 

@@ -67,7 +67,7 @@ $aCat[(int)$sVal] = (int)$sVal;
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-Suppliers
+
 
 <div class="pull-right"><!-- pull-right Starts -->
 

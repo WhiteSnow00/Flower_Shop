@@ -14,7 +14,7 @@ include("includes/main.php");
     <!-- Customer Registration Page-->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">Register</span> AT WUROOD
+        <span class="nero__bold">Đăng ký tài khoản</span>
       </div>
       <p class="nero__text">
       </p>
@@ -32,7 +32,7 @@ include("includes/main.php");
 
 <center><!-- center Starts -->
 
-<h2> Register A New Account </h2>
+<h2> Tạo tài khoản mới </h2>
 
 </center><!-- center Ends -->
 
@@ -42,7 +42,7 @@ include("includes/main.php");
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label>Customer Name</label>
+<label>Tên đăng nhập</label>
 
 <input type="text" class="form-control" name="c_name" required>
 
@@ -50,7 +50,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Email</label>
+<label> Email</label>
 
 <input type="text" class="form-control" name="c_email" required>
 
@@ -58,7 +58,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Password </label>
+<label> Mật khẩu </label>
 
 <div class="input-group"><!-- input-group Starts -->
 
@@ -90,7 +90,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Confirm Password </label>
+<label> Nhập lại mật khẩu </label>
 
 <div class="input-group"><!-- input-group Starts -->
 
@@ -110,7 +110,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Country </label>
+<label> Quốc gia </label>
 
 <input type="text" class="form-control" name="c_country" required>
 
@@ -118,7 +118,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer City </label>
+<label> Thành phố </label>
 
 <input type="text" class="form-control" name="c_city" required>
 
@@ -126,7 +126,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Contact </label>
+<label> Thông tin liên hệ </label>
 
 <input type="text" class="form-control" name="c_contact" required>
 
@@ -134,7 +134,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Address </label>
+<label> Địa chỉ </label>
 
 <input type="text" class="form-control" name="c_address" required>
 
@@ -142,7 +142,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Customer Image </label>
+<label> Ảnh đại diện </label>
 
 <input type="file" class="form-control" name="c_image" >
 
@@ -160,7 +160,7 @@ include("includes/main.php");
 
 <button type="submit" name="register" class="btn btn-primary">
 
-<i class="fa fa-user-md"></i> Register
+<i class="fa fa-user-md"></i> Đăng ký
 
 </button>
 
@@ -239,58 +239,58 @@ check_pass();
 });
 
 function check_pass() {
- var val=document.getElementById("pass").value;
- var meter=document.getElementById("meter");
- var no=0;
- if(val!="")
- {
-// If the password length is less than or equal to 6
-if(val.length<=6)no=1;
+  var val = document.getElementById("pass").value;
+  var meter = document.getElementById("meter");
+  var no = 0;
 
- // If the password length is greater than 6 and contain any lowercase alphabet or any number or any special character
-  if(val.length>6 && (val.match(/[a-z]/) || val.match(/\d+/) || val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)))no=2;
+  var hasUppercase = val.match(/[A-Z]/);
+  var hasLowercase = val.match(/[a-z]/);
+  var hasNumber = val.match(/\d+/);
+  var hasSpecialChar = val.match(/[^A-Za-z0-9]/);
 
-  // If the password length is greater than 6 and contain alphabet,number,special character respectively
-  if(val.length>6 && ((val.match(/[a-z]/) && val.match(/\d+/)) || (val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)) || (val.match(/[a-z]/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))))no=3;
+  var charCombinationCount = [hasUppercase, hasLowercase, hasNumber, hasSpecialChar].filter(Boolean).length;
 
-  // If the password length is greater than 6 and must contain alphabets,numbers and special characters
-  if(val.length>6 && val.match(/[a-z]/) && val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))no=4;
+  if (val !== "") {
+    if (val.length < 8 || charCombinationCount < 2) {
+      no = 1;
+    } else if (val.length < 10 && charCombinationCount === 2) {
+      no = 2;
+    } else if (val.length >= 10 && val.length < 12 && charCombinationCount >= 3) {
+      no = 3;
+    } else if (val.length >= 12 && charCombinationCount === 4) {
+      no = 4;
+    }
 
-  if(no==1)
-  {
-   $("#meter").animate({width:'50px'},300);
-   meter.style.backgroundColor="red";
-   document.getElementById("pass_type").innerHTML="Very Weak";
+    if (no === 1) {
+      $("#meter").animate({ width: '50px' }, 300);
+      meter.style.backgroundColor = "red";
+      document.getElementById("pass_type").innerHTML = "Rất yếu";
+    }
+
+    if (no === 2) {
+      $("#meter").animate({ width: '100px' }, 300);
+      meter.style.backgroundColor = "#F5BCA9";
+      document.getElementById("pass_type").innerHTML = "Yếu";
+    }
+
+    if (no === 3) {
+      $("#meter").animate({ width: '150px' }, 300);
+      meter.style.backgroundColor = "#FF8000";
+      document.getElementById("pass_type").innerHTML = "Vừa";
+    }
+
+    if (no === 4) {
+      $("#meter").animate({ width: '200px' }, 300);
+      meter.style.backgroundColor = "#00FF40";
+      document.getElementById("pass_type").innerHTML = "Mạnh";
+    }
+  } else {
+    meter.style.backgroundColor = "";
+    document.getElementById("pass_type").innerHTML = "";
   }
-
-  if(no==2)
-  {
-   $("#meter").animate({width:'100px'},300);
-   meter.style.backgroundColor="#F5BCA9";
-   document.getElementById("pass_type").innerHTML="Weak";
-  }
-
-  if(no==3)
-  {
-   $("#meter").animate({width:'150px'},300);
-   meter.style.backgroundColor="#FF8000";
-   document.getElementById("pass_type").innerHTML="Good";
-  }
-
-  if(no==4)
-  {
-   $("#meter").animate({width:'200px'},300);
-   meter.style.backgroundColor="#00FF40";
-   document.getElementById("pass_type").innerHTML="Strong";
-  }
- }
-
- else
- {
-  meter.style.backgroundColor="";
-  document.getElementById("pass_type").innerHTML="";
- }
 }
+
+
 
 </script>
 

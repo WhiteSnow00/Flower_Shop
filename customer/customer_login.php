@@ -6,7 +6,7 @@
 
 <h1>Đã là thành viên ?</h1>
 
-<p class="lead" >Login</p>
+<p class="lead" >Đăng nhập ngay</p>
 
 </center>
 
@@ -16,7 +16,7 @@
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label>Email</label>
+<label>Nhập email</label>
 
 <input type="text" class="form-control" name="c_email" required >
 
@@ -40,7 +40,7 @@
 
 <button name="login" value="Login" class="btn btn-primary" >
 
-<i class="fa fa-sign-in" ></i> Log in
+<i class="fa fa-sign-in" ></i> Đăng nhập
 
 </button>
 

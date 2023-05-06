@@ -17,7 +17,7 @@ include("includes/main.php");
     </div>
     <!-- Main -->
     <div class="wrapper">
-            <h1>Featured Collection<h1>
+            <h1>Đáng chú ý<h1>
 
       </div>
 
