@@ -67,7 +67,7 @@ $aCat[(int)$sVal] = (int)$sVal;
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-
+Nhà cung cấp
 
 <div class="pull-right"><!-- pull-right Starts -->
 
@@ -75,7 +75,7 @@ $aCat[(int)$sVal] = (int)$sVal;
 
 <span class="nav-toggle hide-show">
 
-Hide
+Ẩn
 
 </span>
 
@@ -93,7 +93,7 @@ Hide
 
 <div class="input-group"><!-- input-group Starts -->
 
-<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-manufacturer" placeholder="Filter Suppliers">
+<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-manufacturer" placeholder="Tìm kiếm nhà cung cấp">
 
 <a class="input-group-addon"> <i class="fa fa-search"></i> </a>
 
@@ -231,7 +231,7 @@ $manufacturer_title
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-Products Categories
+Sự kiện
 
 <div class="pull-right"><!-- pull-right Starts -->
 
@@ -239,7 +239,7 @@ Products Categories
 
 <span class="nav-toggle hide-show">
 
-Hide
+Ẩn
 
 </span>
 
@@ -257,7 +257,7 @@ Hide
 
 <div class="input-group"><!-- input-group Starts -->
 
-<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-p-cats" placeholder="Filter Product Categories">
+<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-p-cats" placeholder="Tìm kiếm sự kiện">
 
 <a class="input-group-addon"> <i class="fa fa-search"></i> </a>
 
@@ -391,7 +391,7 @@ $p_cat_title
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-Categories
+Danh mục hoa
 
 <div class="pull-right"><!-- pull-right Starts -->
 
@@ -399,7 +399,7 @@ Categories
 
 <span class="nav-toggle hide-show">
 
-Hide
+Ẩn
 
 </span>
 
@@ -417,7 +417,7 @@ Hide
 
 <div class="input-group"><!-- input-group Starts -->
 
-<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-cats" placeholder="Filter Categories">
+<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-cats" placeholder="Tìm kiếm loại hoa">
 
 <a class="input-group-addon"> <i class="fa fa-search"> </i> </a>
 

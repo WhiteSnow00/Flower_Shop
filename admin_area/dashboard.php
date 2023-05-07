@@ -62,7 +62,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> View Details </span>
+<span class="pull-left"> Xem chi tiết </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 
@@ -106,7 +106,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> View Details </span>
+<span class="pull-left"> Xem chi tiết </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 
@@ -138,7 +138,7 @@ else {
 
 <div class="huge"> <?php echo $count_p_categories; ?> </div>
 
-<div>Products Categories</div>
+<div>Sự kiện</div>
 
 </div><!-- col-xs-9 text-right Ends -->
 
@@ -150,7 +150,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> View Details </span>
+<span class="pull-left"> Xem chi tiết </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 
@@ -194,7 +194,7 @@ else {
 
 <div class="panel-footer"><!-- panel-footer Starts -->
 
-<span class="pull-left"> View Details </span>
+<span class="pull-left"> Xem chi tiết </span>
 
 <span class="pull-right"> <i class="fa fa-arrow-circle-right"></i> </span>
 

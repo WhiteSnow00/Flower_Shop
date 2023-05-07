@@ -18,7 +18,7 @@ include("includes/main.php");
     <!-- My Account -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">My </span>Account
+        <span class="nero__bold"> </span>Tài khoản của tôi
       </div>
       <p class="nero__text">
       </p>
@@ -50,11 +50,11 @@ if(!empty($customer_confirm_code)){
 
 <div class="alert alert-danger"><!-- alert alert-danger Starts -->
 
-<strong> Warning! </strong> Please Confirm Your Email and if you have not received your confirmation email
+<strong> Chú ý! </strong> Hãy xác nhận email của bạn, nếu bạn chưa nhận được email xác nhận hãy bấm
 
 <a href="my_account.php?send_email" class="alert-link">
 
-Send Email Again
+Gửi Lại Email Xác Nhận
 
 </a>
 

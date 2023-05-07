@@ -202,7 +202,7 @@ $pro_psp_price = $row_price['product_psp_price'];
 
 $pro_label = $row_price['product_label'];
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 $product_price = $pro_psp_price;
 
@@ -328,7 +328,7 @@ if($status == "product"){
 
 if($status == "product"){
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 echo "
 
@@ -360,7 +360,7 @@ Product Price : $$pro_price
 }
 else{
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 echo "
 
@@ -397,7 +397,7 @@ Bundle Price : $$pro_price
 
 <button class="btn btn-primary" type="submit" name="add_cart">
 
-<i class="fa fa-shopping-cart" ></i> Add to Cart
+<i class="fa fa-shopping-cart" ></i> Thêm vào giỏ hàng
 
 </button>
 
@@ -618,7 +618,7 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 $product_price = "<del> $$pro_price </del>";
 
@@ -680,11 +680,11 @@ echo "
 
 <p class='buttons' >
 
-<a href='$pro_url' class='btn btn-default' >View details</a>
+<a href='$pro_url' class='btn btn-default' >Xem chi tiết</a>
 
 <a href='$pro_url' class='btn btn-primary'>
 
-<i class='fa fa-shopping-cart'></i> Add to cart
+<i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
 </a>
 
@@ -751,7 +751,7 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 $product_price = "<del> $$pro_price </del>";
 
@@ -813,11 +813,11 @@ echo "
 
 <p class='buttons' >
 
-<a href='$pro_url' class='btn btn-default' >View details</a>
+<a href='$pro_url' class='btn btn-default' >Xem chi tiết</a>
 
 <a href='$pro_url' class='btn btn-primary'>
 
-<i class='fa fa-shopping-cart'></i> Add to cart
+<i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
 </a>
 

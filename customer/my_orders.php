@@ -3,7 +3,7 @@
 
 <h1>Đơn hàng của tôi</h1>
 
-<p class="lead"> Your orders in one Place.</p>
+<p class="lead"> Thông tin về các đơn hàng của bạn.</p>
 
 <p class="text-muted" >
 
@@ -23,14 +23,14 @@ Nếu có câu hỏi gì hãy <a href="../contact.php" > liên lạc chúng tôi
 
 <tr>
 
-<th>O.N:</th>
-<th>Due Amount:</th>
-<th>Invoice No:</th>
-<th>Qty:</th>
-<th>Size:</th>
-<th>Order Date:</th>
-<th>Paid/Unpaid:</th>
-<th>Status:</th>
+<th>Mã hàng</th>
+<th>Giá trị</th>
+<th>Số hóa đơn</th>
+<th>Số lượng</th>
+<th>Kích cỡ</th>
+<th>Ngày đặt hàng</th>
+<th>Đã thanh toán?</th>
+<th>Trạng thái</th>
 
 </tr>
 

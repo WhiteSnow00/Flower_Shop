@@ -14,11 +14,11 @@ $customer_id = $row_customer['customer_id'];
 
 ?>
 
-<h1 class="text-center">Payment Options For You</h1>
+<h1 class="text-center">Các phương thức thanh toán</h1>
 
 <p class="lead text-center">
 
-<a href="order.php?c_id=<?php echo $customer_id; ?>">Pay Off line</a>
+<a href="order.php?c_id=<?php echo $customer_id; ?>">Thanh toán offline</a>
 
 </p>
 

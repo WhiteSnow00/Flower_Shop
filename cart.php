@@ -331,7 +331,7 @@ echo @$up_cart = update_cart();
 
 <div class="box same-height headline"><!-- box same-height headline Starts -->
 
-<h3 class="text-center"> Other Products </h3>
+<h3 class="text-center"> Các loại khác </h3>
 
 </div><!-- box same-height headline Ends -->
 
@@ -369,7 +369,7 @@ $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
 
-if($pro_label == "Sale" or $pro_label == "Gift"){
+if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
 $product_price = "<del> $$pro_price </del>";
 
@@ -431,11 +431,11 @@ echo "
 
 <p class='buttons' >
 
-<a href='$pro_url' class='btn btn-default' >View details</a>
+<a href='$pro_url' class='btn btn-default' >Xem chi tiết</a>
 
 <a href='$pro_url' class='btn btn-primary'>
 
-<i class='fa fa-shopping-cart'></i> Add to cart
+<i class='fa fa-shopping-cart'></i> Thêm vào giỏ
 
 </a>
 
@@ -465,12 +465,12 @@ $product_label
 
 <div class="box-header"><!-- box-header Starts -->
 
-<h3>Order Summary</h3>
+<h3>Thanh toán</h3>
 
 </div><!-- box-header Ends -->
 
 <p class="text-muted">
-Shipping and additional costs are calculated based on the products you have chosen.
+Phí giao hàng và các phí khác có thể thay đổi.
 </p>
 
 <div class="table-responsive"><!-- table-responsive Starts -->
@@ -481,7 +481,7 @@ Shipping and additional costs are calculated based on the products you have chos
 
 <tr>
 
-<td> Order Subtotal </td>
+<td> Giá trị đơn hàng </td>
 
 <th> $<?php echo $total; ?>.00 </th>
 
@@ -489,7 +489,7 @@ Shipping and additional costs are calculated based on the products you have chos
 
 <tr>
 
-<td> Shipping and handling </td>
+<td> Giá giao hàng </td>
 
 <th>$0.00</th>
 
@@ -497,7 +497,7 @@ Shipping and additional costs are calculated based on the products you have chos
 
 <tr>
 
-<td>Tax</td>
+<td>Các phí khác</td>
 
 <th>$0.00</th>
 
@@ -505,7 +505,7 @@ Shipping and additional costs are calculated based on the products you have chos
 
 <tr class="total">
 
-<td>Total</td>
+<td>Tổng</td>
 
 <th>$<?php echo $total; ?>.00</th>
 
