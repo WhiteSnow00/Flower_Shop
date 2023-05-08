@@ -1,13 +1,13 @@
 
 <center>
 
-<h1>Do You Really Want To Delete Your Account?</h1>
+<h1>Bạn có thật sự muốn xóa tài khoản của mình?</h1>
 
 <form action="" method="post">
 
-<input class="btn btn-danger" type="submit" name="yes" value="Yes">
+<input class="btn btn-danger" type="submit" name="yes" value="Có">
 
-<input class="btn btn-primary" type="submit" name="no" value="No">
+<input class="btn btn-primary" type="submit" name="no" value="Không">
 
 </form>
 

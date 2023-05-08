@@ -4,7 +4,7 @@
 
 <p class="text-muted" >
 
-If you have any questions, please feel free to <a href="../contact.php" >contact us,</a> our customer service center is working for you 24/7.
+Nếu có câu hỏi gì hãy <a href="../contact.php" > liên lạc chúng tôi</a> , dịch vụ của chúng tôi sẽ hỗ trợ bạn 24/7.
 
 </p>
 
@@ -22,9 +22,9 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <th> Thông tin tài khoản ngân hàng</th>
 
-<th> Thanh toán bằng điện thoại </th>
+<th> Thanh toán với Paypal/Visa/MasterCard </th>
 
-<th> Thanh toán online </th>
+<th> Thanh toán khi nhận hàng </th>
 
 </tr>
 
@@ -34,11 +34,11 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <tr>
 
-<td> Bank Name: Denizbank <br> Account No: 00000000 <br> Branch Code: 0342 <br> Branch Name: Istanbul	 </td>
+<td> Tên ngân hàng: Agribank<br>Thủ tài khoản: Abcxyz <br> Số tài khoản: 123456789 <br> Chi nhánh: Tây Quảng Ninh	 </td>
 
-<td> Mobile No: 05002020202 <br> Name: W.T.A </td>
+<td> Số tài khoản: 123456789 <br> Tên chủ tài khoản: Abcxyz </td>
 
-<td> Full Name: W.T.A <br> Mobile No: 05002020202 <br> Country: Istanbul
+<td> hãy chuẩn bị đủ tiền mặt khi nhận hàng
 </td>
 
 </tr>

@@ -10,11 +10,11 @@
           <a class="currency__change" href="my_account.php?my_orders">
           <?php
           if(!isset($_SESSION['customer_email'])){
-          echo "Welcome: Guest";
+          echo "Chào mừng: Guest";
          }
           else
           {
-              echo "Welcome " . $_SESSION['customer_email'] . "";
+              echo "Chào mừng: " . $_SESSION['customer_email'] . "";
             }
 ?>
           </a>
@@ -23,38 +23,30 @@
         <div class="basket">
           <a href="../cart.php" class="btn btn--basket">
             <i class="icon-basket" href="my_orders.php"></i>
-            <?php items(); ?> items
+            <?php items(); ?> món
           </a>
         </div>
-
-
         <ul class="login">
 
           <li class="login__item">
           <?php
           if(!isset($_SESSION['customer_email'])){
-            echo '<a href="../customer_register.php" class="login__link">Register</a>';
+            echo '<a href="../customer_register.php" class="login__link">Đăng ký</a>';
           }
-
 ?>
           </li>
-
-
           <li class="login__item">
           <?php
           if(!isset($_SESSION['customer_email'])){
-            echo '<a href="../checkout.php" class="login__link">Sign In</a>';
+            echo '<a href="../checkout.php" class="login__link">Đăng nhập</a>';
           }
             else
             {
-                echo '<a href="../logout.php" class="login__link">Log out</a>';
+                echo '<a href="../logout.php" class="login__link">Đăng xuất</a>';
             }
 ?>
-
           </li>
         </ul>
-
-
       </div>
     </div>
     <!-- bottomline -->
@@ -63,7 +55,7 @@
 
         <div class="logo">
           <a class="logo__link" href="../index.php">
-            <img class="logo__img" src="images/logo.png" alt="logo" width="237" height="19">
+            <img class="logo__img" src="includes/images/logo.png" alt="logo" width="237" height="32">
           </a>
         </div>
 
@@ -72,19 +64,19 @@
 
             <li class="categories__item">
               <a class="categories__link categories__link--active" href="../shop.php">
-                Shop
+                Cửa hàng
               </a>
             </li>
 
             <li class="categories__item">
               <a class="categories__link" href="../about.php">
-                About us
+                Về chúng tôi
               </a>
             </li>
 
           <li class="categories__item">
               <a class="categories__link" href="#">
-                My Account
+                Tài khoản của tôi
                 <i class="icon-down-open-1"></i>
               </a>
               <div class="dropdown dropdown--lookbook">
@@ -93,13 +85,13 @@
                     <div class="dropdown__heading">Cài đặt tài khoản</div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Wishlist</a>
+                        <a href="#" class="dropdown__link">Danh sách yêu thích</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Orders</a>
+                        <a href="#" class="dropdown__link">Giỏ hàng</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">View Shopping Cart</a>
+                        <a href="#" class="dropdown__link">Xem thẻ mua hàng</a>
                       </li>
                     </ul>
                   </div>
@@ -107,13 +99,13 @@
                     <div class="dropdown__heading"></div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Edit Your Account</a>
+                        <a href="#" class="dropdown__link">Chỉnh sửa tài khoản</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Change Password</a>
+                        <a href="#" class="dropdown__link">Thay đổi mật khẩu</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Delete Account</a>
+                        <a href="#" class="dropdown__link">Xóa tài khoản</a>
                       </li>
                     </ul>
                   </div>

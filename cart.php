@@ -126,7 +126,7 @@ $total += $sub_total;
 
 <td>
 
-$<?php echo $only_price; ?>.00
+<?php echo $only_price; ?>.000 VND
 
 </td>
 
@@ -142,7 +142,7 @@ $<?php echo $only_price; ?>.00
 
 <td>
 
-$<?php echo $sub_total; ?>.00
+<?php echo $sub_total; ?>.0000 VND
 
 </td>
 
@@ -158,7 +158,7 @@ $<?php echo $sub_total; ?>.00
 
 <th colspan="5"> Total </th>
 
-<th colspan="2"> $<?php echo $total; ?>.00 </th>
+<th colspan="2"> <?php echo $total; ?>.000 VND </th>
 
 </tr>
 
@@ -465,7 +465,7 @@ $product_label
 
 <div class="box-header"><!-- box-header Starts -->
 
-<h3>Thanh toán</h3>
+<h3>Thành tiền</h3>
 
 </div><!-- box-header Ends -->
 
@@ -483,7 +483,7 @@ Phí giao hàng và các phí khác có thể thay đổi.
 
 <td> Giá trị đơn hàng </td>
 
-<th> $<?php echo $total; ?>.00 </th>
+<th> <?php echo $total; ?>.000 VND</th>
 
 </tr>
 
@@ -491,7 +491,7 @@ Phí giao hàng và các phí khác có thể thay đổi.
 
 <td> Giá giao hàng </td>
 
-<th>$0.00</th>
+<th>0VND</th>
 
 </tr>
 
@@ -499,7 +499,7 @@ Phí giao hàng và các phí khác có thể thay đổi.
 
 <td>Các phí khác</td>
 
-<th>$0.00</th>
+<th>0VND</th>
 
 </tr>
 
@@ -507,7 +507,7 @@ Phí giao hàng và các phí khác có thể thay đổi.
 
 <td>Tổng</td>
 
-<th>$<?php echo $total; ?>.00</th>
+<th><?php echo $total; ?>.000VND</th>
 
 </tr>
 

@@ -138,7 +138,7 @@ else {
 
 <div class="huge"> <?php echo $count_p_categories; ?> </div>
 
-<div>Sự kiện</div>
+<div>Events</div>
 
 </div><!-- col-xs-9 text-right Ends -->
 

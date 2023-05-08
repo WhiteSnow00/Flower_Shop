@@ -1,9 +1,9 @@
 
 <center><!-- center Starts -->
 
-<h1> My Wishlist </h1>
+<h1> Danh sách yêu thích </h1>
 
-<p class="lead"> All Your Wishlist Products in One Place. </p>
+<p class="lead"> Danh sách yêu thích của bạn. </p>
 
 </center><!-- center Ends -->
 
@@ -17,11 +17,11 @@
 
 <tr>
 
-<th> Wishlist No. </th>
+<th> Thứ tự sản phẩm </th>
 
-<th> Wishlist Product </th>
+<th> Loại sản phẩm </th>
 
-<th> Delete Wishlist </th>
+<th> Xóa yêu thích? </th>
 
 </tr>
 
@@ -91,7 +91,7 @@ $i++;
 
 <a href="my_account.php?delete_wishlist=<?php echo $wishlist_id; ?>" class="btn btn-primary">
 
-<i class="fa fa-trash-o"> </i> Delete
+<i class="fa fa-trash-o"> </i> Xóa
 
 </a>
 

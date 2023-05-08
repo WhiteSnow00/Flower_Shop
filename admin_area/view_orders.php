@@ -101,7 +101,11 @@ $run_products = mysqli_query($con,$get_products);
 
 $row_products = mysqli_fetch_array($run_products);
 
-$product_title = $row_products['product_title'];
+if (isset($row_products) && isset($row_products['product_title'])) {
+    $product_title = $row_products['product_title'];
+} else {
+    $product_title = "Not Found";
+}
 
 $i++;
 
@@ -120,7 +124,12 @@ $run_customer = mysqli_query($con,$get_customer);
 
 $row_customer = mysqli_fetch_array($run_customer);
 
-$customer_email = $row_customer['customer_email'];
+if (isset($row_customer) && isset($row_customer['customer_email'])) {
+    $customer_email = $row_customer['customer_email'];
+} else {
+    $customer_email = "Not Found";
+}
+
 
 echo $customer_email;
 

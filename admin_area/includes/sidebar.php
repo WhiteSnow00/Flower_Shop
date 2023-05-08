@@ -251,7 +251,7 @@ else {
 
 <a href="#" data-toggle="collapse" data-target="#p_cat">
 
-<i class="fa fa-fw fa-pencil"></i> Sự kiện
+<i class="fa fa-fw fa-pencil"></i> Events
 
 <i class="fa fa-fw fa-caret-down"></i>
 

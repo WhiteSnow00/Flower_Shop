@@ -76,12 +76,12 @@ $i++;
 
 if($order_status=='pending'){
 
-$order_status = "Unpaid";
+$order_status = "Chưa thanh toán";
 
 }
 else{
 
-$order_status = "Paid";
+$order_status = "Đã thanh toán";
 
 }
 

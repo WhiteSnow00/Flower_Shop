@@ -8,8 +8,8 @@ echo "<script>window.open('../checkout.php','_self')</script>";
 
 }else {
 
-include("C:/xampp/htdocs/Wurood/website1/includes/db.php");
-include("C:/xampp/htdocs/Wurood/website1/includes/header.php");
+include("C:/xampp/htdocs/FlowerShop/includes/db.php");
+include("C:/xampp/htdocs/FlowerShop/includes/header.php");
 include("functions/functions.php");
 include("includes/main.php");
 
@@ -34,13 +34,13 @@ $order_id = $_GET['order_id'];
 
 <div class="box"><!-- box Starts -->
 
-<h1 align="center"> Please Confirm Your Payment </h1>
+<h1 align="center"> Hãy điền thông tin thanh toán của bạn </h1>
 
 <form action="confirm.php?update_id=<?php echo $order_id; ?>" method="post" enctype="multipart/form-data"><!--- form Starts -->
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Invoice No:</label>
+<label>Mã hàng</label>
 
 <input type="text" class="form-control" name="invoice_no" required>
 
@@ -48,7 +48,7 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Amount Sent:</label>
+<label>Giá trị thanh toán</label>
 
 <input type="text" class="form-control" name="amount_sent" required>
 
@@ -56,14 +56,14 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Select Payment Mode:</label>
+<label>Lựa chọn phương thức thanh toán</label>
 
 <select name="payment_mode" class="form-control"><!-- select Starts -->
 
-<option>Select Payment Mode</option>
-<option>Bank Code</option>
-<option>Mobile Payment</option>
-<option>Western Union</option>
+<option>Chọn phương thức thanh toán</option>
+<option>ATM</option>
+<option>Paypal/Visa/MasterCard</option>
+<option>COD</option>
 
 </select><!-- select Ends -->
 
@@ -71,7 +71,7 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Transaction/Reference Id:</label>
+<label>Mã giao dịch</label>
 
 <input type="text" class="form-control" name="ref_no" required>
 
@@ -79,7 +79,7 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Mobile Payment Code:</label>
+<label>Mã OTP</label>
 
 <input type="text" class="form-control" name="code" required>
 
@@ -87,7 +87,7 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Payment Date:</label>
+<label>Ngày giao dịch</label>
 
 <input type="text" class="form-control" name="date" required>
 
@@ -97,7 +97,7 @@ $order_id = $_GET['order_id'];
 
 <button type="submit" name="confirm_payment" class="btn btn-primary btn-lg">
 
-<i class="fa fa-user-md"></i> Confirm Payment
+<i class="fa fa-user-md"></i> Xác nhận thanh toán
 
 </button>
 
@@ -158,7 +158,7 @@ echo "<script>window.open('my_account.php?my_orders','_self')</script>";
 
 <?php
 
-include("C:/xampp/htdocs/Wurood/website1/includes/footer.php");
+include("C:/xampp/htdocs/FlowerShop/includes/footer.php");
 
 ?>
 

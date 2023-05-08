@@ -83,13 +83,13 @@ if(!isset($_SESSION['customer_email'])){
                     <div class="dropdown__heading">Cài đặt tài khoản</div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Danh sách mong muốn</a>
+                        <a href="customer/my_account.php?my_wishlist" class="dropdown__link">Danh sách mong muốn</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Giỏ hàng</a>
+                        <a href="cart.php" class="dropdown__link">Giỏ hàng</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Xem thẻ mua hàng</a>
+                        <a href="cart.php" class="dropdown__link">Xem thẻ mua hàng</a>
                       </li>
                     </ul>
                   </div>
@@ -97,13 +97,13 @@ if(!isset($_SESSION['customer_email'])){
                     <div class="dropdown__heading"></div>
                     <ul class="dropdown__items">
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Sửa thông tin tài khoản</a>
+                        <a href="customer/my_account.php?edit_account" class="dropdown__link">Sửa thông tin tài khoản</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Thay đổi mật khẩu</a>
+                        <a href="customer/my_account.php?change_pass" class="dropdown__link">Thay đổi mật khẩu</a>
                       </li>
                       <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Xóa tài khoản</a>
+                        <a href="customer/my_account.php?delete_account" class="dropdown__link">Xóa tài khoản</a>
                       </li>
                     </ul>
                   </div>
