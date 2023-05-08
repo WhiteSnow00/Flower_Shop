@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2023 at 11:05 AM
+-- Generation Time: May 08, 2023 at 03:47 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `about_us` (
   `about_id` int(11) NOT NULL,
-  `about_heading` text NOT NULL,
-  `about_short_desc` text NOT NULL,
-  `about_desc` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `about_heading` mediumtext NOT NULL,
+  `about_short_desc` mediumtext NOT NULL,
+  `about_desc` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `about_us`
@@ -53,20 +53,20 @@ CREATE TABLE `admins` (
   `admin_email` varchar(255) NOT NULL,
   `admin_pass` varchar(255) NOT NULL,
   `admin_country` text NOT NULL,
-  `admin_city` text NOT NULL,
+  `admin_city` mediumtext NOT NULL,
   `admin_contact` varchar(255) NOT NULL,
-  `admin_address` text NOT NULL,
-  `admin_image` text DEFAULT NULL,
+  `admin_address` mediumtext NOT NULL,
+  `admin_image` mediumtext DEFAULT NULL,
   `admin_about` varchar(255) NOT NULL,
-  `admin_job` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `admin_job` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `admins`
 --
 
 INSERT INTO `admins` (`admin_id`, `admin_name`, `admin_email`, `admin_pass`, `admin_country`, `admin_city`, `admin_contact`, `admin_address`, `admin_image`, `admin_about`, `admin_job`) VALUES
-(1, 'ayaya', 'ayaya@gmail.com', 'ayaya', 'Vietnam', 'Quang Ninh', '0000', '0000', NULL, '::1', '527703386');
+(0, 'ayaya', 'ayaya@gmail.com', 'ayaya', 'a', 'b', 'c', 'd', '', 'f', 'g');
 
 -- --------------------------------------------------------
 
@@ -79,15 +79,15 @@ CREATE TABLE `cart` (
   `ip_add` varchar(255) NOT NULL,
   `qty` int(11) NOT NULL,
   `p_price` varchar(255) NOT NULL,
-  `size` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `size` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `cart`
 --
 
 INSERT INTO `cart` (`p_id`, `ip_add`, `qty`, `p_price`, `size`) VALUES
-(8, '::1', 4, '40', 'Small (3 pieces)');
+(5, '::1', 2, '150', 'Small (3 pieces)');
 
 -- --------------------------------------------------------
 
@@ -97,10 +97,10 @@ INSERT INTO `cart` (`p_id`, `ip_add`, `qty`, `p_price`, `size`) VALUES
 
 CREATE TABLE `categories` (
   `cat_id` int(11) NOT NULL,
-  `cat_title` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `cat_top` text NOT NULL,
-  `cat_image` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `cat_title` text NOT NULL,
+  `cat_top` mediumtext NOT NULL,
+  `cat_image` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `categories`
@@ -123,8 +123,8 @@ INSERT INTO `categories` (`cat_id`, `cat_title`, `cat_top`, `cat_image`) VALUES
 
 CREATE TABLE `contact_us` (
   `contact_id` int(11) NOT NULL,
-  `contact_email` text NOT NULL,
-  `contact_desc` text NOT NULL
+  `contact_email` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
+  `contact_desc` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
 --
@@ -132,7 +132,7 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`contact_id`, `contact_email`, `contact_desc`) VALUES
-(1, 'whatever@anything.com', 'If you have any questions, please feel free to contact us, our customer service center is working for you 24/7.');
+(1, 'whatever@anything.com', 'Nếu bạn có bất kỳ câu hỏi gì, hãy liên hệ chúng tôi');
 
 -- --------------------------------------------------------
 
@@ -148,7 +148,7 @@ CREATE TABLE `coupons` (
   `coupon_code` varchar(255) NOT NULL,
   `coupon_limit` int(11) NOT NULL,
   `coupon_used` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `coupons`
@@ -169,21 +169,20 @@ CREATE TABLE `customers` (
   `customer_name` varchar(255) NOT NULL,
   `customer_email` varchar(255) NOT NULL,
   `customer_pass` varchar(255) NOT NULL,
-  `customer_country` text NOT NULL,
-  `customer_city` text NOT NULL,
+  `customer_country` mediumtext NOT NULL,
+  `customer_city` mediumtext NOT NULL,
   `customer_contact` varchar(255) NOT NULL,
-  `customer_address` text NOT NULL,
-  `customer_image` text DEFAULT NULL,
+  `customer_address` mediumtext NOT NULL,
+  `customer_image` mediumtext DEFAULT NULL,
   `customer_ip` varchar(255) NOT NULL,
-  `customer_confirm_code` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `customer_confirm_code` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `customers`
 --
 
 INSERT INTO `customers` (`customer_id`, `customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `customer_address`, `customer_image`, `customer_ip`, `customer_confirm_code`) VALUES
-(11, 'User1', 'user1email@gmail.com', 'user1pass!', 'Saudi Arabia', 'Jeddah', '012346789', 'Jeddah', 'user1.png', '::1', '1902102211'),
 (12, 'ayaya', 'kazenosakura100@gmail.com', '244466666', 'vietnam', 'ha noi', 'a', 'a', '', '::1', '527703386');
 
 -- --------------------------------------------------------
@@ -198,10 +197,10 @@ CREATE TABLE `customer_orders` (
   `due_amount` int(11) NOT NULL,
   `invoice_no` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
-  `size` text NOT NULL,
+  `size` mediumtext NOT NULL,
   `order_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `order_status` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `order_status` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `customer_orders`
@@ -218,7 +217,8 @@ INSERT INTO `customer_orders` (`order_id`, `customer_id`, `due_amount`, `invoice
 (23, 7, 10, 334642094, 1, 'Small (3 pieces)', '2021-05-20 16:39:06', 'Complete'),
 (24, 7, 40, 724100346, 1, 'Small (3 pieces)', '2021-05-15 22:23:26', 'Complete'),
 (25, 7, 50, 1708867829, 1, 'Small (3 pieces)', '2021-05-20 09:30:04', 'pending'),
-(26, 11, 120, 124055521, 3, 'Small (3 pieces)', '2021-05-22 09:16:05', 'Complete');
+(26, 11, 120, 124055521, 3, 'Small (3 pieces)', '2021-05-22 09:16:05', 'Complete'),
+(27, 12, 160, 425618663, 4, 'Small (3 pieces)', '2023-05-07 09:23:44', 'pending');
 
 -- --------------------------------------------------------
 
@@ -228,7 +228,7 @@ INSERT INTO `customer_orders` (`order_id`, `customer_id`, `due_amount`, `invoice
 
 CREATE TABLE `enquiry_types` (
   `enquiry_id` int(11) NOT NULL,
-  `enquiry_title` varchar(255) NOT NULL
+  `enquiry_title` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
 --
@@ -248,10 +248,10 @@ INSERT INTO `enquiry_types` (`enquiry_id`, `enquiry_title`) VALUES
 
 CREATE TABLE `manufacturers` (
   `manufacturer_id` int(11) NOT NULL,
-  `manufacturer_title` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `manufacturer_top` text NOT NULL,
-  `manufacturer_image` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `manufacturer_title` text NOT NULL,
+  `manufacturer_top` mediumtext NOT NULL,
+  `manufacturer_image` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `manufacturers`
@@ -276,11 +276,11 @@ CREATE TABLE `payments` (
   `payment_id` int(11) NOT NULL,
   `invoice_no` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
-  `payment_mode` text NOT NULL,
+  `payment_mode` mediumtext NOT NULL,
   `ref_no` int(11) NOT NULL,
   `code` int(11) NOT NULL,
-  `payment_date` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `payment_date` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `payments`
@@ -302,27 +302,22 @@ CREATE TABLE `pending_orders` (
   `order_id` int(11) NOT NULL,
   `customer_id` int(11) NOT NULL,
   `invoice_no` int(11) NOT NULL,
-  `product_id` text NOT NULL,
+  `product_id` mediumtext NOT NULL,
   `qty` int(11) NOT NULL,
-  `size` text NOT NULL,
-  `order_status` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `size` mediumtext NOT NULL,
+  `order_status` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `pending_orders`
 --
 
 INSERT INTO `pending_orders` (`order_id`, `customer_id`, `invoice_no`, `product_id`, `qty`, `size`, `order_status`) VALUES
-(16, 2, 1715523401, '2', 3, 'Small', 'pending'),
-(17, 2, 1715523401, '9', 2, 'Large', 'pending'),
-(18, 2, 1715523401, '11', 1, 'Medium', 'pending'),
-(19, 2, 1068059025, '7', 1, 'Medium', 'pending'),
-(20, 2, 909940689, '6', 3, 'Large', 'complete'),
-(21, 2, 909940689, '11', 2, 'Meduim', 'complete'),
 (23, 7, 334642094, '8', 1, 'Small (3 pieces)', 'Complete'),
 (24, 7, 724100346, '8', 1, 'Small (3 pieces)', 'Complete'),
 (25, 7, 1708867829, '7', 1, 'Small (3 pieces)', 'pending'),
-(26, 11, 124055521, '8', 3, 'Small (3 pieces)', 'Complete');
+(26, 11, 124055521, '8', 3, 'Small (3 pieces)', 'Complete'),
+(27, 12, 425618663, '8', 4, 'Small (3 pieces)', 'pending');
 
 -- --------------------------------------------------------
 
@@ -336,18 +331,18 @@ CREATE TABLE `products` (
   `cat_id` int(11) NOT NULL,
   `manufacturer_id` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `product_title` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `product_url` text NOT NULL,
-  `product_img1` text NOT NULL,
-  `product_img2` text NOT NULL,
-  `product_img3` text NOT NULL,
+  `product_title` text NOT NULL,
+  `product_url` mediumtext NOT NULL,
+  `product_img1` mediumtext NOT NULL,
+  `product_img2` mediumtext NOT NULL,
+  `product_img3` mediumtext NOT NULL,
   `product_price` int(11) NOT NULL,
   `product_psp_price` int(11) NOT NULL,
-  `product_desc` text NOT NULL,
-  `product_keywords` text NOT NULL,
-  `product_label` text NOT NULL,
+  `product_desc` mediumtext NOT NULL,
+  `product_keywords` mediumtext NOT NULL,
+  `product_label` mediumtext NOT NULL,
   `status` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `products`
@@ -371,10 +366,10 @@ INSERT INTO `products` (`product_id`, `p_cat_id`, `cat_id`, `manufacturer_id`, `
 
 CREATE TABLE `product_categories` (
   `p_cat_id` int(11) NOT NULL,
-  `p_cat_title` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `p_cat_top` text NOT NULL,
-  `p_cat_image` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `p_cat_title` text NOT NULL,
+  `p_cat_top` mediumtext NOT NULL,
+  `p_cat_image` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `product_categories`
@@ -397,8 +392,8 @@ CREATE TABLE `terms` (
   `term_id` int(11) NOT NULL,
   `term_title` varchar(100) NOT NULL,
   `term_link` varchar(100) NOT NULL,
-  `term_desc` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+  `term_desc` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `terms`
@@ -576,7 +571,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `customer_orders`
 --
 ALTER TABLE `customer_orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `enquiry_types`
@@ -600,7 +595,7 @@ ALTER TABLE `payments`
 -- AUTO_INCREMENT for table `pending_orders`
 --
 ALTER TABLE `pending_orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `products`
