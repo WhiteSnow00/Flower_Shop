@@ -103,7 +103,7 @@ $i++;
 
 <td><img src="product_images/<?php echo $pro_image; ?>" width="60" height="60"></td>
 
-<td>$ <?php echo $pro_price; ?></td>
+<td> <?php echo $pro_price; ?>.000VND</td>
 
 <td>
 <?php

@@ -103,16 +103,16 @@ $pro_url = $row_products['product_url'];
 
 if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
-$product_price = "<del> $$pro_price </del>";
+$product_price = "<del> $pro_price.000VND </del>";
 
-$product_psp_price = "| $$pro_psp_price";
+$product_psp_price = "| $pro_psp_price.000VND";
 
 }
 else{
 
 $product_psp_price = "";
 
-$product_price = "$$pro_price";
+$product_price = "$pro_price.000VND";
 
 }
 
@@ -304,16 +304,16 @@ $pro_url = $row_products['product_url'];
 
 if($pro_label == "Giảm giá" or $pro_label == "Quà tặng"){
 
-$product_price = "<del> $$pro_price </del>";
+$product_price = "<del> $pro_price.000VND </del>";
 
-$product_psp_price = "| $$pro_psp_price";
+$product_psp_price = "| $pro_psp_price.000VND";
 
 }
 else{
 
 $product_psp_price = "";
 
-$product_price = "$$pro_price";
+$product_price = "$pro_price.000VND";
 
 }
 

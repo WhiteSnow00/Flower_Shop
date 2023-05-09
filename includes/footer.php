@@ -46,13 +46,13 @@
 				<div class="footer-nav__heading">Tài khoản của bạn</div>
 				<ul class="footer-nav__list">
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Đăng nhập</a>
+						<a href="checkout.php" class="footer-nav__link">Đăng nhập</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Đăng ký</a>
+						<a href="customer_register.php" class="footer-nav__link">Đăng ký</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Xem giỏ hàng</a>
+						<a href="cart.php" class="footer-nav__link">Xem giỏ hàng</a>
 					</li>
 					<li class="footer-nav__item">
 						<a href="#" class="footer-nav__link">Xem hướng dẫn</a>
@@ -61,7 +61,7 @@
 						<a href="#" class="footer-nav__link">Theo dõi đơn hàng</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Thay đổi thông tin</a>
+						<a href="customer/my_account.php?edit_account" class="footer-nav__link">Thay đổi thông tin</a>
 					</li>
 				</ul>
 			</div>

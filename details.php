@@ -85,7 +85,7 @@ $p_cat_title = $row_p_cat['p_cat_title'];
     <!-- Details -->
     <div class="nero4">
       <div class="nero4__heading">
-        <span class="nero4__bold">Product </span>View
+        <span class="nero4__bold"></span>Chi Tiết Sản phẩm
       </div>
       <p class="nero4__text">
       </p>
@@ -139,7 +139,7 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 <span class="glyphicon glyphicon-chevron-left"> </span>
 
-<span class="sr-only"> Previous </span>
+<span class="sr-only"> Trước </span>
 
 </a><!-- left carousel-control Ends -->
 
@@ -147,7 +147,7 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 <span class="glyphicon glyphicon-chevron-right"> </span>
 
-<span class="sr-only"> Next </span>
+<span class="sr-only"> Sau </span>
 
 </a><!-- right carousel-control Ends -->
 
@@ -235,7 +235,7 @@ if($status == "product"){
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-5 control-label" >Product Quantity </label>
+<label class="col-md-5 control-label" >Số lượng sản phẩm </label>
 
 <div class="col-md-7" ><!-- col-md-7 Starts -->
 
@@ -255,15 +255,15 @@ if($status == "product"){
 
 <div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-5 control-label" >Bouquet Size</label>
+<label class="col-md-5 control-label" >Kích cỡ</label>
 
 <div class="col-md-7" ><!-- col-md-7 Starts -->
 
 <select name="product_size" class="form-control" >
 
-<option>Small (3 pieces)</option>
-<option>Medium (6 pieces)</option>
-<option>Large (9 pieces)</option>
+<option>Nhỏ (3 bông)</option>
+<option>Vừa (6 bông)</option>
+<option>Lớn (9 bông)</option>
 
 </select>
 
@@ -334,9 +334,9 @@ echo "
 
 <p class='price'>
 
-Giá sản phẩm : <del> $$pro_price </del><br>
+Giá sản phẩm : <del> $pro_price.000VND</del><br>
 
-Product sale Price : $$pro_psp_price
+Giá sau khi giảm : $pro_psp_price.000VND
 
 </p>
 
@@ -349,7 +349,7 @@ echo "
 
 <p class='price'>
 
-Giá sản phẩm : $$pro_price
+Giá sản phẩm : $pro_price.000VND
 
 </p>
 
@@ -708,7 +708,7 @@ $product_label
 
 <div class="box same-height"><!-- box same-height Starts -->
 
-<h3 class="text-center"> Bundle Products </h3>
+<h3 class="text-center"> Gói sản phẩm </h3>
 
 </div><!-- box same-height Ends -->
 

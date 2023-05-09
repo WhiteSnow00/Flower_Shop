@@ -13,7 +13,7 @@ include("includes/main.php");
     <!-- About Us page -->
     <div class="nero3">
       <div class="nero3__heading">
-        <span class="nero3__bold">Về</span> chúng tôi
+        <span class="nero3__bold"></span>Về chúng tôi
       </div>
       <p class="nero3__text">
       </p>
