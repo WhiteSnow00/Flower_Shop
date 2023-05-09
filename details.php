@@ -334,7 +334,7 @@ echo "
 
 <p class='price'>
 
-Product Price : <del> $$pro_price </del><br>
+Giá sản phẩm : <del> $$pro_price </del><br>
 
 Product sale Price : $$pro_psp_price
 
@@ -349,7 +349,7 @@ echo "
 
 <p class='price'>
 
-Product Price : $$pro_price
+Giá sản phẩm : $$pro_price
 
 </p>
 
@@ -403,7 +403,7 @@ Bundle Price : $$pro_price
 
 <button class="btn btn-primary" type="submit" name="add_wishlist">
 
-<i class="fa fa-heart" ></i> Add to Wishlist
+<i class="fa fa-heart" ></i> Thêm vào danh sách yêu thích
 
 </button>
 
@@ -517,7 +517,7 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 if($status == "product"){
 
-echo "Product Description";
+echo "Mô Tả Sản Phẩm";
 
 }
 else{
@@ -580,7 +580,7 @@ if($status == "product"){
 
 <div class="box same-height headline"><!-- box same-height headline Starts -->
 
-<h3 class="text-center"> Other <br> Products </h3>
+<h3 class="text-center"> Sản phẩm <br> khác </h3>
 
 </div><!-- box same-height headline Ends -->
 
